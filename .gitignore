@@ -1,0 +1,72 @@
+# Root-level workspace .gitignore.
+# Each subproject also has its own .gitignore — both are honoured.
+
+# Environment files — exclude ALL .env* variants, including .env.OLD-* backups
+.env
+.env.*
+*.env
+
+# Migration data — contains live customer PII; never commit
+migration_data/
+
+# SQL dumps — never commit. Exception: schema migrations in supabase/
+*.sql
+!supabase/**/*.sql
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Node
+node_modules/
+
+# Vercel
+.vercel/
+
+# Build artifacts
+.next/
+out/
+build/
+dist/
+.vercel
+
+# Claude / AI assistant working files — NEVER commit
+CLAUDE.md
+**/CLAUDE.md
+AGENTS.md
+**/AGENTS.md
+MEMORY.md
+**/MEMORY.md
+.claude/
+**/.claude/
+memory/
+**/memory/
+.claude-code/
+*.claude-session
+*.jsonl
+
+# Temp working folders / scratch
+potential missing chatbot docs/
+/tmp/
+/scratch/
+*.tmp
+*.bak
+
+# Source-only asset folders (deployed copies live in hccs-master/public/logos/)
+/logos/
+
+# Editor / OS junk
+*~
+.history/
+.fleet/
+
+# from this monorepo. Its source is mirrored to its own GitHub repo.
+
+# Office temp files
+**/~$*
+**/~*.docx
+**/~*.pdf
+

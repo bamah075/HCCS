@@ -1,0 +1,81 @@
+{
+    "totalScore": 9,
+    "riskLevel": "HIGH",
+    "hasCriticalOverride": true,
+    "primaryRisk": "MOM",
+    "alerts": [
+        "MOM Risk Alert: Possible gaps in contracts, payslips, records or termination process."
+    ],
+    "answers": [
+        {
+            "question_number": 1,
+            "question": "Do you currently employ foreign workers such as EP, S Pass or Work Permit holders?",
+            "category": "Workforce Complexity",
+            "selected": "Yes, many",
+            "score": 1
+        },
+        {
+            "question_number": 2,
+            "question": "Are CPF contributions calculated and submitted with proper checks in place?",
+            "category": "CPF",
+            "selected": "Yes, with clear internal checks",
+            "score": 0
+        },
+        {
+            "question_number": 3,
+            "question": "Do all employees have updated employment contracts aligned with MOM Key Employment Terms?",
+            "category": "MOM",
+            "selected": "Yes, but not recently reviewed",
+            "score": 1
+        },
+        {
+            "question_number": 4,
+            "question": "Do you issue itemised payslips in line with MOM requirements?",
+            "category": "MOM",
+            "selected": "Yes",
+            "score": 0
+        },
+        {
+            "question_number": 5,
+            "question": "Are your foreign employees' job roles, salaries and responsibilities aligned with MOM expectations?",
+            "category": "MOM",
+            "selected": "No",
+            "score": 2
+        },
+        {
+            "question_number": 6,
+            "question": "Do you maintain proper HR records such as leave, attendance, contracts and warning letters?",
+            "category": "MOM",
+            "selected": "Yes, in a structured system",
+            "score": 0
+        },
+        {
+            "question_number": 7,
+            "question": "Do you have a clear process for employee termination and dispute handling?",
+            "category": "MOM",
+            "selected": "No",
+            "score": 2
+        },
+        {
+            "question_number": 8,
+            "question": "Does your company follow fair hiring practices and avoid potentially discriminatory recruitment language?",
+            "category": "TAFEP",
+            "selected": "Yes",
+            "score": 0
+        },
+        {
+            "question_number": 9,
+            "question": "Do you actively monitor updates from MOM, CPF and TAFEP?",
+            "category": "Governance",
+            "selected": "Occasionally",
+            "score": 1
+        },
+        {
+            "question_number": 10,
+            "question": "Do you have dedicated HR expertise, either internal or external, supporting compliance matters?",
+            "category": "Governance",
+            "selected": "No",
+            "score": 2
+        }
+    ]
+}

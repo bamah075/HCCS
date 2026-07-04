@@ -1,0 +1,2218 @@
+{
+    "nav": {
+        "about": "About",
+        "services": "Services",
+        "media": "Media",
+        "news": "News",
+        "resources": "Resources",
+        "contact": "Contact",
+        "membership": "Membership",
+        "complianceScan": "HR Compliance Scan",
+        "hrAccess": "HR Access",
+        "signIn": "Sign In",
+        "signOut": "Sign Out",
+        "book": "Book"
+    },
+    "footer": {
+        "tagline": "Human Capital Consulting & Services (Spore) Pte Ltd\n25+ years experience",
+        "services": "Services",
+        "epPr": "EP / PR Applications",
+        "hrCompliance": "HR Compliance",
+        "workforcePlanning": "Workforce Planning",
+        "fractionalHr": "Fractional HR",
+        "aiHr": "AI HR Solutions",
+        "freeScan": "Free Compliance Scan",
+        "company": "Company",
+        "aboutUs": "About Us",
+        "hrNews": "HR News",
+        "employmentLaws": "Employment Laws",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "contact": "Contact",
+        "whatsapp": "WhatsApp Us",
+        "bookConsultation": "Book Free Consultation",
+        "bilingualNote": "Bilingual Support: EN / 中文"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "We'd love to hear from you. Reach out and let's start a conversation. We typically reply within 1–2 business days.",
+        "emailLabel": "Email",
+        "phoneLabel": "Phone",
+        "whatsappLabel": "WhatsApp",
+        "whatsappUs": "WhatsApp Us",
+        "addressLabel": "Address",
+        "bilingualNote": "🌐 Bilingual Support Available",
+        "bilingualDetail": "We offer consultations in English and Mandarin (中文). Please indicate your preferred language in your message.",
+        "formTitle": "Send Us a Message",
+        "fullName": "Full Name *",
+        "namePlaceholder": "Jane Smith",
+        "companyName": "Company Name",
+        "companyPlaceholder": "Acme Pte Ltd",
+        "email": "Email *",
+        "emailPlaceholder": "jane@company.com",
+        "phone": "Phone",
+        "phonePlaceholder": "+65 9123 4567",
+        "industry": "Industry",
+        "industryDefault": "Select an industry...",
+        "service": "Service of Interest",
+        "serviceDefault": "Select a service...",
+        "message": "Message *",
+        "messagePlaceholder": "How can we help you?",
+        "submit": "Send Message",
+        "submitting": "Sending...",
+        "successTitle": "Message Sent!",
+        "successMessage": "Thank you for reaching out. We'll get back to you within 1–2 business days.",
+        "errorFallback": "Failed to send message. Please try again.",
+        "industries": {
+            "Retail": "Retail",
+            "F&B": "F&B",
+            "Construction": "Construction",
+            "Manufacturing": "Manufacturing",
+            "Trading": "Trading",
+            "Services": "Services",
+            "Recruitment": "Recruitment",
+            "Technology": "Technology",
+            "Finance": "Finance",
+            "Healthcare": "Healthcare",
+            "Education": "Education",
+            "Logistics": "Logistics",
+            "Energy": "Energy",
+            "Real Estate": "Real Estate",
+            "Hospitality": "Hospitality",
+            "Automotive": "Automotive",
+            "Aerospace": "Aerospace",
+            "Agriculture": "Agriculture",
+            "Pharma & Biotech": "Pharma & Biotech",
+            "Consumer Goods": "Consumer Goods",
+            "IT & Software": "IT & Software",
+            "Telecommunications": "Telecommunications",
+            "Media & Entertainment": "Media & Entertainment",
+            "Consulting": "Consulting",
+            "Legal": "Legal",
+            "Accounting": "Accounting",
+            "Insurance": "Insurance",
+            "Banking": "Banking",
+            "Investment": "Investment",
+            "Import & Export": "Import & Export",
+            "Wholesale": "Wholesale",
+            "Mining": "Mining",
+            "Oil & Gas": "Oil & Gas",
+            "Utilities": "Utilities",
+            "Transportation": "Transportation",
+            "Marine & Shipping": "Marine & Shipping",
+            "Aviation": "Aviation",
+            "Tourism": "Tourism",
+            "Beauty & Wellness": "Beauty & Wellness",
+            "Fashion": "Fashion",
+            "Publishing": "Publishing",
+            "Advertising": "Advertising",
+            "Public Relations": "Public Relations",
+            "Non-Profit": "Non-Profit",
+            "Government": "Government",
+            "Other": "Other"
+        },
+        "services": {
+            "EP/PR Application & Renewals": "EP/PR Application & Renewals",
+            "Permanent Residency": "Permanent Residency",
+            "EntrePass & Startup": "EntrePass & Startup",
+            "HR Compliance & Advisory": "HR Compliance & Advisory",
+            "Job Redesign & Quota Planning": "Job Redesign & Quota Planning",
+            "Fractional HR Business Partner": "Fractional HR Business Partner",
+            "Workforce Planning & Org Design": "Workforce Planning & Org Design",
+            "AI HR": "AI HR",
+            "Learning & Development": "Learning & Development",
+            "Performance & Culture": "Performance & Culture",
+            "Membership Enquiry": "Membership Enquiry",
+            "Other": "Other"
+        }
+    },
+    "common": {
+        "bookFreeConsultation": "Book Free Consultation",
+        "freeScan": "Free Compliance Scan",
+        "learnMore": "Learn more",
+        "returnHome": "Return to Home",
+        "startScan": "Start Free Scan",
+        "visitLink": "Visit ↗",
+        "subscribeNewsletter": "Subscribe to Newsletter",
+        "allServices": "← All Services",
+        "source": "Source",
+        "locked": "Locked",
+        "mostPopular": "Most Popular",
+        "upgradeRequired": "Upgrade to unlock",
+        "video": "Video"
+    },
+    "home": {
+        "heroBadge": "25+ Years Experience",
+        "heroTitle": "Start–Staff–Scale Your SG Business",
+        "heroDesc": "We provide end-to-end support to companies, from incorporation to industry-specific guidance on operating in Singapore, ensuring full legal and regulatory compliance. We also manage HR functions to enable smooth operations, leveraging AI-driven solutions, including an AI-powered talent acquisition and HR services platform.",
+        "heroBook": "Book Free Consultation",
+        "heroScan": "Free Compliance Scan",
+        "heroStatClients": "Clients Trust Us",
+        "heroStatRate": "Success Rate",
+        "heroStatExperience": "Market Experience",
+        "heroFloatingBadge": "Professional Consultancy",
+        "heroFloatingDesc": "Human advisors across compliance, HR, and workforce services",
+        "statsClients": "Clients Trust Us",
+        "statsProjects": "Projects Managed",
+        "statsYears": "Years Experience",
+        "statsPartners": "Associated Partners",
+        "statsRate": "Success Rate",
+        "clarifyBadge": "Important Clarification",
+        "clarifyTitle": "HCCS Is A Consultancy Firm, Not A Standalone AI HR Service",
+        "clarifyDesc": "If you engage HCCS, you are working with a professional HR compliance consultancy firm that provides end-to-end HR consulting services in Singapore, from work pass and residency strategy to compliance, workforce planning, and business setup support.",
+        "servicesBadge": "Our Services",
+        "servicesTitle": "Strategic HR Solutions Built To Scale",
+        "servicesDesc": "HCCS offers end-to-end HR consulting services in Singapore. AIHR is one supported platform within a broader professional advisory offering.",
+        "servicesLearnMore": "Learn more",
+        "exploreEmployer": "Explore Employer Services",
+        "galleryBadge": "What HCCS Actually Delivers",
+        "galleryTitle": "Professional Services Backed By Real Consultants",
+        "galleryDesc": "The firm supports employers across setup, staffing, compliance, employee relations, and workforce planning, not just AI tooling or automated responses.",
+        "advantageBadge": "Strategic Value",
+        "advantageTitle": "The HCCS Advantage",
+        "advantageDesc": "We convert HR compliance and advisory work into scalable, practical systems that lower operational risk and strengthen long-term business performance.",
+        "insightsTitle": "Insights in 60 Seconds",
+        "insightsDesc": "Follow Florence and team for quick takes on HR compliance, AI adoption, and Singapore workforce trends.",
+        "insightsFollow": "Follow @askbeebeesghr",
+        "insightsVideoLabel": "Video",
+        "testimonialsTitle": "What Our Clients Say",
+        "membershipBadge": "Optional Digital Support",
+        "membershipTitle": "AI-Enabled Membership Access For Ongoing HR Support",
+        "membershipDesc": "For clients who want additional speed and self-serve resources, HCCS also offers an AI-enabled membership platform alongside our core consultancy services.",
+        "membershipViewPlans": "View Plans",
+        "membershipTryFree": "Try Free",
+        "ctaBadge": "Free 30-Minute Consultation",
+        "ctaTitle": "Ready to Build a Stronger, More Compliant Business?",
+        "ctaDesc": "Book a free consultation with our MOM-registered HR and workforce advisory team. No obligation, just practical advice.",
+        "ctaBook": "Book Free Consultation",
+        "ctaScan": "Free Compliance Scan",
+        "services": [
+            {
+                "title": "New EP/PR Application & Renewals",
+                "description": "Strategic guidance for professionals earning S$5,600+. Eligibility assessment and comprehensive application support."
+            },
+            {
+                "title": "Permanent Residency",
+                "description": "Secure your long-term future in Singapore with expert handling of PTS scheme applications for pass holders."
+            },
+            {
+                "title": "EntrePass & Startup",
+                "description": "For foreign entrepreneurs wanting to start a business, with complete incorporation and visa strategy."
+            },
+            {
+                "title": "HR Compliance & Advisory",
+                "description": "Ensure your company meets all MOM regulatory requirements, avoid penalties, and improve approval odds."
+            },
+            {
+                "title": "Recruitment & Placement",
+                "description": "Recruitment and placement services delivered via Strategic Search Specialist (S) Pte Ltd (EA Licence 23S2050) — led by Ker Bee Bee, Director / Recruitment Consultant."
+            },
+            {
+                "title": "AI HR",
+                "description": "AI-powered HR guidance and compliance monitoring backed by expert advisory."
+            },
+            {
+                "title": "Singapore Market Entry & Business Setup",
+                "description": "Helping foreign founders establish and operate in Singapore with full compliance."
+            },
+            {
+                "title": "Fractional HR Business Partner",
+                "description": "Access senior HR leadership on a part-time or project basis to drive strategic initiatives."
+            },
+            {
+                "title": "Workforce Planning & Organisation Design",
+                "description": "Align workforce capabilities with growth plans, automation, and AI readiness."
+            },
+            {
+                "title": "Learning & Development",
+                "description": "Strategic upskilling and AI-focused training to future-proof your workforce."
+            },
+            {
+                "title": "Performance & Culture",
+                "description": "Building high-performing teams through OKRs, KPIs, and leadership development."
+            }
+        ],
+        "consultancyPillars": [
+            {
+                "title": "Singapore Market Entry & Business Setup",
+                "description": "Helping foreign founders establish and operate in Singapore with full compliance."
+            },
+            {
+                "title": "Work Pass & Residency Strategy",
+                "description": "Strategic EP, EntrePass, and PR solutions designed to improve approval success."
+            },
+            {
+                "title": "HR Compliance & Risk Advisory",
+                "description": "Protect your business with structured HR frameworks aligned to Singapore regulations."
+            },
+            {
+                "title": "AIHR Compliance Intelligence Platform",
+                "description": "AI-powered HR guidance and compliance monitoring backed by expert advisory, not a standalone AI service."
+            }
+        ],
+        "consultancyGallery": [
+            {
+                "title": "Consultant-led guidance",
+                "caption": "Clear HR compliance advice delivered by experienced professionals, not a chatbot-only workflow."
+            },
+            {
+                "title": "Multiple services under one firm",
+                "caption": "From compliance reviews and immigration support to fractional HR and workforce planning, HCCS covers the full operating picture."
+            }
+        ],
+        "advantagePoints": [
+            "Converts HR compliance and advisory into scalable, monetisable solutions for business growth.",
+            "Reduces execution and regulatory risk for partners and investors via meticulous audit-ready systems.",
+            "Strengthens credibility with regulators, associations, and enterprise clients through precise execution.",
+            "Positions AI-HR as a cost-saving, trust-building backbone, not a replacement for human judgment."
+        ],
+        "heroPill": "MOM-Registered · IHRP-CP · 25+ Years",
+        "heroEaLine": "Recruitment & placement via Ker Bee Bee — Director / Recruitment Consultant, Strategic Search Specialist (S) Pte Ltd · EA Licence No. 23S2050",
+        "heroMicrocopy": "30 minutes. With the principal. No pitch.",
+        "principalLedEyebrow": "Principal-led",
+        "principalLedTagline": "Ker Bee Bee shapes every engagement personally",
+        "trustStripCaption": "Trusted by leading organisations & associations",
+        "trustStripCaptionAssoc": "Trusted by leading associations",
+        "statClients": "Clients served",
+        "statGrants": "Grants secured",
+        "statYears": "Years experience",
+        "statRate": "Compliance rate",
+        "whyEyebrow": "Why HCCS",
+        "whyTitle": "Everyone claims this. We prove it.",
+        "diff": [
+            {
+                "title": "Regulator-grade compliance",
+                "body": "MOM-registered, licensed Employment Agency. Principal is IHRP-CP and ACTA-certified, with a 100% compliance track record across audits and approvals. Recruitment and placement is delivered via Ker Bee Bee — Director / Recruitment Consultant at Strategic Search Specialist (S) Pte Ltd, EA Licence No. 23S2050.",
+                "proof": "MOM · IHRP-CP · ACTA · EA 23S2050"
+            },
+            {
+                "title": "Real outcomes, not advice decks",
+                "body": "Over S$5M in government training and transformation grants secured for clients. We do the application, not just the recommendation.",
+                "proof": "S$5M+ grants secured"
+            },
+            {
+                "title": "Principal-led engagements",
+                "body": "Ker Bee Bee personally scopes every engagement and stays close on the calls that matter. A senior team — IHRP-certified, MOM-trained — runs the day-to-day, with the principal one message away.",
+                "proof": "Principal on every brief"
+            }
+        ],
+        "aihrEyebrow": "Built by HCCS",
+        "aihrTitle": "Your HR team. Plus AIHR.",
+        "aihrBody": "Trained on Singapore’s Employment Act, MOM circulars, and CPF rules. Backed by Ker Bee Bee for anything the AI can’t answer. Start free.",
+        "aihrCtaPlans": "See the plans",
+        "aihrCtaStart": "Start free",
+        "aihrMicrocopy": "Free tier. No card. Built for Singapore.",
+        "aihrMostPopular": "Most popular",
+        "aihrTiers": [
+            {
+                "name": "Free",
+                "line": "Self-serve compliance guidance"
+            },
+            {
+                "name": "Essential",
+                "line": "AI HR co-pilot for daily ops"
+            },
+            {
+                "name": "Professional",
+                "line": "Audit-ready policy library"
+            },
+            {
+                "name": "Strategic",
+                "line": "Advisory-on-demand + AI"
+            }
+        ],
+        "whatWeDeliver": "What we deliver",
+        "seeAllServices": "See all services",
+        "inTheirWords": "In their words",
+        "fieldNotesEyebrow": "Field notes",
+        "watchCta": "Watch",
+        "nextStepEyebrow": "Next step",
+        "ctaFinalTitle": "Stop guessing. Get a straight answer.",
+        "ctaFinalBody": "30 minutes with the principal. If we’re not the right fit, she’ll tell you who is.",
+        "ctaFinalBook": "Book the call",
+        "ctaFinalWhatsapp": "WhatsApp Ker Bee Bee",
+        "ctaFinalScanPre": "Not ready? Run the ",
+        "ctaFinalScanLink": "60-second scan",
+        "ctaFinalScanPost": " first. No email needed."
+    },
+    "services": {
+        "badge": "HCCS Services",
+        "title": "Our Services",
+        "desc": "HCCS offers the following services in accordance with HR trends 2025 as per the World Economic Forum.",
+        "highlights": [
+            {
+                "title": "Singapore Market Entry & Business Setup",
+                "desc": "Helping foreign founders establish and operate in Singapore with full compliance."
+            },
+            {
+                "title": "Work Pass & Residency Strategy",
+                "desc": "Strategic EP, EntrePass, and PR solutions designed to improve approval success."
+            },
+            {
+                "title": "HR Compliance & Risk Advisory",
+                "desc": "Protect your business with structured HR frameworks aligned to Singapore regulations."
+            },
+            {
+                "title": "AIHR Compliance Intelligence Platform",
+                "desc": "AI-powered HR guidance and compliance monitoring backed by expert advisory."
+            }
+        ],
+        "loading": "Loading services...",
+        "ctaTitle": "Not sure which service you need?",
+        "ctaDesc": "Book a free 30-minute consultation with our HR advisory team. We'll assess your needs and recommend the right services for your business.",
+        "ctaButton": "Book Free Consultation",
+        "engagementsEyebrow": "Engagements",
+        "browseTitle": "Browse the full slate",
+        "seeAllCta": "See all services",
+        "nextStepEyebrow": "Next step"
+    },
+    "serviceDetail": {
+        "allServices": "All Services",
+        "badge": "HCCS Service",
+        "overview": "Overview",
+        "whatsIncluded": "What's Included",
+        "whoHelps": "Who This Helps",
+        "readyTitle": "Ready to get started?",
+        "readyDesc": "Book a free consultation and let our team guide you through the right approach for your business.",
+        "ctaButton": "Book Free Consultation",
+        "speakWithPrincipal": "Speak with the principal",
+        "howCanHelp": "How Ker Bee Bee can help on this",
+        "founderTitle": "Founder & Principal Consultant",
+        "credLine": "IHRP-CP · ACTA-certified",
+        "statYears": "Years",
+        "statSMEs": "SMEs",
+        "statGrants": "Grants",
+        "statAward": "MOM Award",
+        "pitchPara1": "With over 25 years leading HR across listed companies, MNCs and SMEs — spanning energy, oil & gas, manufacturing, engineering and F&B — Ker Bee Bee personally guides clients through the strategic and compliance decisions that this service hinges on. She has secured over $5M in government training grants for her clients and is a regular speaker on the Employment Act and HR compliance.",
+        "pitchPara2": "On a 30-minute call she will walk you through what your specific situation actually needs, whether it fits this engagement, and the realistic timeline and fees. No template pitch — just a working session with the principal who will be doing the work.",
+        "quote": "“We provide the reliable backbone so you can move forward with confidence.”",
+        "bulletPrincipal": "Principal-led engagement — Ker Bee Bee personally shapes the brief",
+        "bulletMomRegistered": "MOM-registered, licensed EA agency, IHRP-CP certified",
+        "bulletGrants": "Grant advisory included where eligible",
+        "whatsappCta": "WhatsApp Ker Bee Bee",
+        "footerNote": "No obligation · 30-minute call · "
+    },
+    "employer": {
+        "badge": "HCCS Services",
+        "title": "Our Services",
+        "desc": "HCCS offers the following services in accordance with HR trends 2025 as per the World Economic Forum.",
+        "highlights": [
+            {
+                "title": "Singapore Market Entry & Business Setup",
+                "desc": "Helping foreign founders establish and operate in Singapore with full compliance."
+            },
+            {
+                "title": "Work Pass & Residency Strategy",
+                "desc": "Strategic EP, EntrePass, and PR solutions designed to improve approval success."
+            },
+            {
+                "title": "HR Compliance & Risk Advisory",
+                "desc": "Protect your business with structured HR frameworks aligned to Singapore regulations."
+            },
+            {
+                "title": "AIHR Compliance Intelligence Platform",
+                "desc": "AI-powered HR guidance and compliance monitoring backed by expert advisory."
+            }
+        ],
+        "services": [
+            {
+                "icon": "EP",
+                "title": "New EP/PR Application & Renewals",
+                "desc": "Strategic guidance for professionals earning S$5,600+. Eligibility assessment and comprehensive application support."
+            },
+            {
+                "icon": "PR",
+                "title": "Permanent Residency",
+                "desc": "Secure your long-term future in Singapore. Expert handling of PTS scheme applications for pass holders."
+            },
+            {
+                "icon": "EN",
+                "title": "EntrePass & Startup",
+                "desc": "For foreign entrepreneurs wanting to start a business. Complete incorporation and visa strategy."
+            },
+            {
+                "icon": "HR",
+                "title": "HR Compliance & Advisory",
+                "desc": "Ensure your company meets all MOM regulatory requirements. Avoid penalties and improve approval odds."
+            },
+            {
+                "icon": "AI",
+                "title": "AI HR",
+                "desc": "Cost-effective, tech-enabled HR support for SMEs. Transform your HR into a strategic growth engine."
+            },
+            {
+                "icon": "SG",
+                "title": "Singapore Market Entry & Business Setup",
+                "desc": "Helping foreign founders establish and operate in Singapore with full compliance."
+            },
+            {
+                "icon": "FB",
+                "title": "Fractional HR Business Partner",
+                "desc": "Access senior HR leadership on a part-time or project basis to drive strategic initiatives."
+            },
+            {
+                "icon": "WP",
+                "title": "Workforce Planning & Organisation Design",
+                "desc": "Align workforce capabilities with growth plans, automation, and AI readiness."
+            },
+            {
+                "icon": "LD",
+                "title": "Learning & Development",
+                "desc": "Strategic upskilling and AI-focused training to future-proof your workforce."
+            },
+            {
+                "icon": "PC",
+                "title": "Performance & Culture",
+                "desc": "Building high-performing teams through OKRs, KPIs, and leadership development."
+            }
+        ],
+        "ctaTitle": "Not sure which service you need?",
+        "ctaDesc": "Book a free 30-minute consultation with our HR advisory team. We'll assess your needs and recommend the right services for your business.",
+        "ctaButton": "Book Free Consultation"
+    },
+    "consultation": {
+        "title": "Book a Free Consultation",
+        "subtitle": "Fill in the form below and our team will reach out within 1 business day to confirm your appointment.",
+        "freeTag": "Free Introductory",
+        "freeTitle": "Free Consultation",
+        "freeDuration": "30 minutes",
+        "freeFeatures": [
+            "Initial HR assessment",
+            "Service recommendations",
+            "No commitment required",
+            "Via video call"
+        ],
+        "freeCta": "Book Free Session ↗",
+        "expertTag": "Most Popular",
+        "expertLabel": "Premium Advisory",
+        "expertTitle": "Expert Advisory",
+        "expertPrice": "S$1500",
+        "expertDuration": "60 minutes",
+        "expertFeatures": [
+            "In-depth HR strategy review",
+            "Compliance audit",
+            "Customized action plan",
+            "Priority booking"
+        ],
+        "expertCta": "Checkout Expert Advisory →",
+        "fullName": "Full Name *",
+        "namePlaceholder": "Your full name",
+        "companyName": "Company Name",
+        "companyPlaceholder": "Company Pte Ltd",
+        "email": "Email *",
+        "emailPlaceholder": "you@company.com",
+        "phone": "Phone",
+        "phonePlaceholder": "+65 9123 4567",
+        "industry": "Industry",
+        "industryDefault": "Select an industry",
+        "service": "Service of Interest",
+        "serviceDefault": "Select a service",
+        "message": "Anything else we should know?",
+        "messagePlaceholder": "Optional notes or specific questions...",
+        "submit": "Book Free Consultation",
+        "submitting": "Submitting...",
+        "successTitle": "Consultation Request Received!",
+        "successMessage": "Thank you! We'll confirm your appointment within 1 business day.",
+        "errorFallback": "Submission failed. Please try again."
+    },
+    "consultationSuccess": {
+        "title": "Consultation Booked!",
+        "desc": "Thank you for booking your free 30-minute consultation with HCCS. We'll confirm your appointment within 1 business day via email.",
+        "emailNote": "📧 A confirmation will be sent to your email address.",
+        "phoneNote": "📞 You may also reach us at",
+        "whatsappNote": "💬 Or WhatsApp us at",
+        "returnHome": "Return to Home"
+    },
+    "complianceScan": {
+        "badge": "Free · One-Time Scan",
+        "title": "HR Compliance Risk Scan",
+        "desc": "Find out if your company is exposed to MOM regulatory risk. Answer 10 quick questions and receive an instant compliance score, risk rating, and recommended corrective actions — at no cost.",
+        "startScan": "Start Free Scan",
+        "takesNote": "Takes about 3 minutes",
+        "whatYouReceive": "What You'll Receive",
+        "deliverablesEyebrow": "Deliverables",
+        "scopeEyebrow": "Scope",
+        "runItNowEyebrow": "Run it now",
+        "receiveItems": [
+            {
+                "icon": "📊",
+                "title": "Compliance Score",
+                "desc": "An instant percentage score across 10 key HR compliance areas."
+            },
+            {
+                "icon": "⚠️",
+                "title": "Risk Level Rating",
+                "desc": "Categorised as Low, Medium, High, or Critical risk with a plain-English explanation."
+            },
+            {
+                "icon": "📋",
+                "title": "Action Checklist",
+                "desc": "Specific corrective steps tailored to the gaps identified in your answers."
+            }
+        ],
+        "areasTitle": "10 Areas Covered",
+        "areas": [
+            "Employment Contracts",
+            "Payslips",
+            "CPF",
+            "Foreign Workers",
+            "Fair Hiring",
+            "Leave Entitlements",
+            "Work Injury",
+            "Anti-Discrimination",
+            "Retrenchment",
+            "HR Records"
+        ],
+        "ctaTitle": "Ready to check your compliance status?",
+        "ctaDesc": "Free, instant.",
+        "ctaButton": "Start Free Scan →",
+        "steps": [
+            "Company Details",
+            "Introduction",
+            "Questions",
+            "Results"
+        ],
+        "companyDetails": {
+            "heading": "Your Details",
+            "subheading": "We'll use this to personalise your compliance report.",
+            "fullName": "Full Name",
+            "businessEmail": "Business Email",
+            "companyName": "Company Name",
+            "mobileNumber": "Mobile Number",
+            "industryLabel": "Industry",
+            "sizeLabel": "Company Size",
+            "foreignWorkersLabel": "Do you employ foreign workers?",
+            "yes": "Yes",
+            "no": "No",
+            "selectIndustry": "Select an industry...",
+            "selectSize": "Select company size...",
+            "continue": "Continue →",
+            "industries": {
+                "Retail": "Retail",
+                "F&B": "F&B",
+                "Construction": "Construction",
+                "Manufacturing": "Manufacturing",
+                "Trading": "Trading",
+                "Services": "Services",
+                "Recruitment": "Recruitment",
+                "Technology": "Technology",
+                "Finance": "Finance",
+                "Healthcare": "Healthcare",
+                "Education": "Education",
+                "Logistics": "Logistics",
+                "Energy": "Energy",
+                "Real Estate": "Real Estate",
+                "Hospitality": "Hospitality",
+                "Automotive": "Automotive",
+                "Aerospace": "Aerospace",
+                "Agriculture": "Agriculture",
+                "Pharma & Biotech": "Pharma & Biotech",
+                "Consumer Goods": "Consumer Goods",
+                "IT & Software": "IT & Software",
+                "Telecommunications": "Telecommunications",
+                "Media & Entertainment": "Media & Entertainment",
+                "Consulting": "Consulting",
+                "Legal": "Legal",
+                "Accounting": "Accounting",
+                "Insurance": "Insurance",
+                "Banking": "Banking",
+                "Investment": "Investment",
+                "Import & Export": "Import & Export",
+                "Wholesale": "Wholesale",
+                "Mining": "Mining",
+                "Oil & Gas": "Oil & Gas",
+                "Utilities": "Utilities",
+                "Transportation": "Transportation",
+                "Marine & Shipping": "Marine & Shipping",
+                "Aviation": "Aviation",
+                "Tourism": "Tourism",
+                "Beauty & Wellness": "Beauty & Wellness",
+                "Fashion": "Fashion",
+                "Publishing": "Publishing",
+                "Advertising": "Advertising",
+                "Public Relations": "Public Relations",
+                "Non-Profit": "Non-Profit",
+                "Government": "Government",
+                "Other": "Other"
+            },
+            "sizes": {
+                "1–5 employees": "1–5 employees",
+                "6–20 employees": "6–20 employees",
+                "21–50 employees": "21–50 employees",
+                "51–200 employees": "51–200 employees",
+                "201–500 employees": "201–500 employees",
+                "500+ employees": "500+ employees"
+            }
+        },
+        "intro": {
+            "helloPrefix": "Hello, ",
+            "aboutPrefix": "You're about to assess ",
+            "aboutSuffix": " against Singapore's key HR compliance requirements.",
+            "timingTitle": "Takes about 3 minutes",
+            "timingDesc": "10 questions across key MOM compliance areas",
+            "honestTitle": "Answer honestly",
+            "honestDesc": "Your score is only as accurate as your answers. When in doubt, choose \"Not Sure\".",
+            "resultsTitle": "Get instant results",
+            "resultsDesc": "Your compliance score, risk level, and recommended actions will appear immediately.",
+            "back": "← Back",
+            "start": "Start Questions →"
+        },
+        "questionsPage": {
+            "heading": "HR Compliance Questions",
+            "answeredLabel": "answered",
+            "back": "← Back",
+            "submitReady": "Get My Compliance Score →",
+            "submitWaiting": "Answer all questions to continue",
+            "analysing": "Analysing Your Responses",
+            "analysingDesc": "AIHR is now analysing your responses based on key Singapore HR compliance risk indicators.",
+            "resultsHeading": "Your Compliance Results",
+            "totalScore": "Total Score",
+            "outOf": "out of",
+            "points": "points",
+            "riskLevelLabel": "Risk Level",
+            "primaryRiskLabel": "Primary Risk:",
+            "breakdownTitle": "Category Risk Breakdown",
+            "nextStepsTitle": "Next Steps",
+            "disclaimer": "This assessment is based on your responses and provides guidance only — not legal advice.",
+            "bookReview": "Book Expert Review",
+            "downloadPDF": "Download Report (PDF)",
+            "mixedRisk": "Multiple WFA areas",
+            "generalCompliance": "Workplace Fairness Act",
+            "momAlert": "Multiple WFA policy gaps identified — these are mandatory once the Act is in force.",
+            "cpfAlert": "Hiring and selection evidence is weak — fair-consideration audits will land here first.",
+            "tafepAlert": "Grievance and anti-retaliation controls missing — highest-risk area for complaints.",
+            "riskLevels": {
+                "LOW": {
+                    "label": "WFA Ready",
+                    "subtitle": "Your fairness posture is solid.",
+                    "description": "Core policies, evidence, and grievance channels are in place. Maintain by reviewing annually and refreshing training.",
+                    "recommendations": [
+                        "Schedule annual WFA policy review and management sign-off",
+                        "Re-run this checklist after major hires or org changes",
+                        "Document the next training cycle for fair employment practices"
+                    ]
+                },
+                "MEDIUM": {
+                    "label": "Gaps Identified",
+                    "subtitle": "Several WFA obligations are not yet evidenced.",
+                    "description": "You have a foundation but missing policies, documentation, or training will hurt under audit. Close gaps in the next 60–90 days.",
+                    "recommendations": [
+                        "Draft or update the missing policy documents",
+                        "Document interview standards, appraisal rubrics, and grievance procedures",
+                        "Roll out fair-employment training and capture attendance",
+                        "Engage HCCS for a structured WFA readiness review"
+                    ]
+                },
+                "HIGH": {
+                    "label": "Significant Exposure",
+                    "subtitle": "Foundational WFA controls are absent.",
+                    "description": "Your organisation is exposed under the Workplace Fairness Act. Prioritise putting policies, channels, and evidence in place before any audit, complaint, or transition.",
+                    "recommendations": [
+                        "Implement Workplace Fairness Policy with management endorsement immediately",
+                        "Establish an anti-harassment policy and grievance procedure with documented channels",
+                        "Train all staff and managers; capture attendance for evidence",
+                        "Engage HCCS for end-to-end remediation and audit-ready documentation"
+                    ]
+                }
+            },
+            "questions": [
+                {
+                    "question": "Does the Company has a Workplace Fairness Policy",
+                    "evidence": "Policy document",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Has senior management approved the policy?",
+                    "evidence": "Management approval records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Is the policy communicated to all employees?",
+                    "evidence": "Employee communication records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are job advertisements free from discriminatory wording?",
+                    "evidence": "Job advertisements",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are interview questions standardized?",
+                    "evidence": "Interview templates",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are hiring decisions documented objectively?",
+                    "evidence": "Interview assessment forms",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are compensation practices applied consistently?",
+                    "evidence": "Salary structure",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are appraisal criteria objective and measurable?",
+                    "evidence": "Appraisal forms",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are promotion opportunities communicated fairly?",
+                    "evidence": "Promotion records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Is there an anti-harassment policy?",
+                    "evidence": "Policy document",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Is there a Grievance Handling Policy in place",
+                    "evidence": "Policy Policy",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are employees informed how to raise workplace fairness concerns?",
+                    "evidence": "Employee handbook",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Do employees receive workplace fairness training?",
+                    "evidence": "Training attendance records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Does the company prohibit retaliation against complainants?",
+                    "evidence": "Policy document",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are promotion trends analyzed for fairness?",
+                    "evidence": "HR analytics reports",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are recruitment agencies required to follow fair employment practices?",
+                    "evidence": "Vendor contracts",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are older workers treated fairly in hiring and promotion?",
+                    "evidence": "HR records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are reasonable accommodations considered?",
+                    "evidence": "Accommodation records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are HR policies version-controlled?",
+                    "evidence": "Policy register",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Has the company performed a WFA readiness assessment?",
+                    "evidence": "Audit reports",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                }
+            ],
+            "evidenceLabel": "Evidence",
+            "categoryNames": {
+                "Policy & Governance": "Policy & Governance",
+                "Hiring & Selection": "Hiring & Selection",
+                "Employee Lifecycle": "Employee Lifecycle",
+                "Reporting & Grievance": "Reporting & Grievance",
+                "Compliance & Analytics": "Compliance & Analytics"
+            }
+        }
+    },
+    "membership": {
+        "title": "AIHR Membership Plans",
+        "desc": "Access AI-powered HR tools, premium templates, compliance scans, and exclusive consultancy discounts — designed for Singapore businesses.",
+        "mostPopular": "Most Popular",
+        "faqTitle": "Frequently Asked Questions",
+        "promo": {
+            "monthlyBadge": "Limited Offer",
+            "monthlyLabel": "Essential Plan",
+            "monthlyTitle": "First 3 Months at S$199/month",
+            "monthlyDesc": "Billed monthly — S$199/month for months 1–3, then S$599/month from month 4 onwards.",
+            "monthlyThen": "Then S$599/month",
+            "monthlySavings": "Save S$900 in the first 3 months",
+            "monthlyCta": "Claim Offer",
+            "annualBadge": "Best Value",
+            "annualLabel": "Essential Plan",
+            "annualTitle": "Get 3 Extra Months Free",
+            "annualDesc": "Subscribe annually and get 15 months of Essential access for the price of 12 — that's 3 months completely free.",
+            "annualPlanLabel": "12-month plan",
+            "annualHighlight": "3 Months Free",
+            "annualSubtitle": "15 months for the price of 12",
+            "annualCta": "Claim Offer"
+        },
+        "plans": [
+            {
+                "name": "Free",
+                "price": "S$0",
+                "period": "forever",
+                "target": "Individuals exploring HR basics",
+                "features": [
+                    "AI HR Chatbot (basic knowledge base)",
+                    "Limited resource access",
+                    "Free HR Compliance Risk Scan (one-time)",
+                    "Access to public news & insights"
+                ],
+                "cta": "Get Started Free",
+                "href": "/member-portal"
+            },
+            {
+                "name": "Essential",
+                "price": "S$5,988",
+                "period": "/ year (Year 1 promo)",
+                "target": "SMEs needing compliance support",
+                "features": [
+                    "AI HR Chatbot (enhanced knowledge base)",
+                    "Explanded resource library - templates, SOPs, compliance guides",
+                    "Free AI Alert On Government Legistation Changes To Your Email",
+                    "Prioirty consultation booking",
+                    "20% off HCCS consultancy fees",
+                    "15% off Virtual Classroom classes",
+                    "1 annual HR Compliance Audit (light diagnostic)",
+                    "Member-only premium insights & updates"
+                ],
+                "cta": "Get Essential",
+                "href": "/checkout?plan=essential"
+            },
+            {
+                "name": "Professional",
+                "price": "S$11,988",
+                "period": "annual billing",
+                "target": "Growing businesses",
+                "features": [
+                    "Everything in Essential",
+                    "AIHR Pro + chatbot - advanced responses & knowledge base",
+                    "Full premium resource vault",
+                    "Free AI Alert On Government Legistation Changes To Your Email",
+                    "Higher consultation priority (above Essential)",
+                    "25% off Virtual Classroom classes",
+                    "2 HR audits / compliance reviews per year",
+                    "Premium templates, SOPs & policy packs"
+                ],
+                "cta": "Contact for Pricing",
+                "href": "/contact"
+            },
+            {
+                "name": "Strategic",
+                "price": "S$17,988",
+                "period": "annual billing",
+                "target": "Enterprise HR teams",
+                "features": [
+                    "Everything in Professional",
+                    "AIHR Strategic chatbot — widest knowledge base, best performance",
+                    "Full access to all resources & premium tools",
+                    "Free AI Alert On Government Legistation Changes To Your Email",
+                    "Highest consultation priority (fastest response)",
+                    "35% off Virtual Classroom classes",
+                    "HR Compliance Audit every 6 months",
+                    "Team / organisation access (multi-user portal)",
+                    "Dedicated onboarding & activation session"
+                ],
+                "cta": "Contact for Pricing",
+                "href": "/contact"
+            }
+        ],
+        "faqs": [
+            {
+                "q": "Can I try before I subscribe?",
+                "a": "Yes — our Free plan gives you access to basic AI HR chatbot queries, 3 templates, and a one-time compliance scan with no credit card required."
+            },
+            {
+                "q": "Is there a monthly billing option?",
+                "a": "Currently all paid plans are billed annually. This helps us offer the best value and deliver consistent service to our members."
+            },
+            {
+                "q": "Can I upgrade my plan later?",
+                "a": "Yes, you can upgrade at any time. Unused value from your current plan will be prorated toward your new plan."
+            },
+            {
+                "q": "Why is the Essential plan cheaper in Year 1?",
+                "a": "We are currently running a 3-month launch promotional discount for early members. The promo price locks in for your first year."
+            },
+            {
+                "q": "Is payment secure?",
+                "a": "Yes. All payments are processed securely via Airwallex. HCCS never stores your card details."
+            }
+        ]
+    },
+    "resources": {
+        "title": "Resources",
+        "desc": "Practical external resources for Singapore employers and HR teams.",
+        "govLinksTitle": "Government & Institutional Links",
+        "hccsLinksTitle": "HCCS Internal Links",
+        "visitLink": "Visit ↗",
+        "ctaTitle": "Need personalised HR compliance advice?",
+        "ctaDesc": "Our team of MOM-registered HR consultants can guide you through the regulations that apply to your business.",
+        "ctaButton": "Book Free Consultation",
+        "governmentLinks": [
+            {
+                "label": "CPF Board",
+                "href": "https://www.cpf.gov.sg",
+                "description": "Central Provident Fund rules, employer obligations, and contribution guidance."
+            },
+            {
+                "label": "Ministry of Manpower",
+                "href": "https://www.mom.gov.sg",
+                "description": "Employment practices, work pass rules, and core labor regulations in Singapore."
+            },
+            {
+                "label": "Inland Revenue Authority",
+                "href": "https://www.iras.gov.sg",
+                "description": "Corporate tax, payroll tax reporting, and tax compliance information."
+            },
+            {
+                "label": "Accounting & Corporate Regulatory Authority",
+                "href": "https://www.acra.gov.sg",
+                "description": "Business registration, filing requirements, and corporate governance matters."
+            },
+            {
+                "label": "Immigration & Checkpoints Authority",
+                "href": "https://www.ica.gov.sg",
+                "description": "Immigration policies and entry requirements for Singapore."
+            },
+            {
+                "label": "Singapore National Employers Federation",
+                "href": "https://www.snef.org.sg",
+                "description": "Employer-focused updates, advisory material, and industrial relations support."
+            },
+            {
+                "label": "Tripartite Alliance for Fair & Progressive Employment",
+                "href": "https://www.tafep.sg",
+                "description": "Fair hiring practices, workplace guidelines, and anti-discrimination advisories."
+            },
+            {
+                "label": "National Trades Union Congress",
+                "href": "https://www.ntuc.org.sg",
+                "description": "Workplace support ecosystem and labor movement resources."
+            }
+        ],
+        "hccsLinks": [
+            {
+                "label": "About HCCS"
+            },
+            {
+                "label": "HR News & Updates"
+            },
+            {
+                "label": "Media"
+            },
+            {
+                "label": "Contact"
+            },
+            {
+                "label": "Membership"
+            }
+        ]
+    },
+    "hrNews": {
+        "title": "HR News",
+        "desc": "Stay current with Singapore MOM, CPF, TAFEP, IRAS, and ACRA regulatory updates — curated for business owners and HR professionals.",
+        "allIndustries": "All Industries",
+        "alertTitle": "📢 Industry Regulatory Alerts",
+        "alertDesc": "Get real-time alerts for MOM, CPF, IRAS, TAFEP, ACRA, and ICA regulatory changes relevant to your industry. Select your industry above to filter relevant news.",
+        "subscribeNote": "Subscribe to our newsletter for weekly HR regulatory updates delivered to your inbox.",
+        "subscribeButton": "Subscribe to Newsletter",
+        "source": "Source:",
+        "industries": [
+            "All Industries",
+            "Technology",
+            "Finance & Banking",
+            "Manufacturing",
+            "F&B & Hospitality",
+            "Healthcare",
+            "Construction",
+            "Retail",
+            "Professional Services"
+        ],
+        "newsItems": [
+            {
+                "date": "Apr 2026",
+                "tag": "MOM",
+                "title": "Flexible Work Arrangement Guidelines Now in Effect",
+                "desc": "The Tripartite Guidelines on Flexible Work Arrangements became legally enforceable. Employers must fairly consider all FWA requests in writing.",
+                "source": "Straits Times"
+            },
+            {
+                "date": "Mar 2026",
+                "tag": "Legislation",
+                "title": "Workplace Fairness Legislation — Key Changes for Employers",
+                "desc": "Singapore's Workplace Fairness Act strengthens protections against workplace discrimination. Employers must update policies by the effective date.",
+                "source": "Business Times"
+            },
+            {
+                "date": "Mar 2026",
+                "tag": "CPF",
+                "title": "Higher Monthly Salary Ceilings and Other CPF Changes in 2026",
+                "desc": "CPF monthly salary ceiling increases to S$8,000. Employers must update payroll systems to reflect new contribution rates.",
+                "source": "MOM"
+            },
+            {
+                "date": "Feb 2026",
+                "tag": "MOM",
+                "title": "New MOM Guidelines on Retirement and Re-employment",
+                "desc": "Updated guidelines clarify employer obligations under the Retirement and Re-employment Act, including re-employment offers and retraining support.",
+                "source": "MOM"
+            },
+            {
+                "date": "Feb 2026",
+                "tag": "Salary",
+                "title": "Salary Outlook 2026: Projected Increments Across Industries",
+                "desc": "MOM and industry surveys project average salary increments of 4–6% across most sectors, with Technology and Healthcare leading at 7–9%.",
+                "source": "Business Times"
+            },
+            {
+                "date": "Jan 2026",
+                "tag": "Tech Pass",
+                "title": "Tech Pass Eligibility Criteria Updated for 2026",
+                "desc": "MOM has revised Tech Pass eligibility criteria to include product managers and AI specialists. Application windows open quarterly.",
+                "source": "MOM"
+            },
+            {
+                "date": "Jan 2026",
+                "tag": "TAFEP",
+                "title": "Fair Hiring Framework — Audit Season Begins",
+                "desc": "TAFEP announces targeted compliance audits for companies with more than 25 employees. Fair consideration for locals must be documented.",
+                "source": "TAFEP"
+            },
+            {
+                "date": "Dec 2025",
+                "tag": "Retrenchment",
+                "title": "MOM Retrenchment Notification — Threshold Lowered",
+                "desc": "Companies retrenching 5 or more employees must notify MOM within 5 working days. Updated forms and filing procedures are now live.",
+                "source": "Today Online"
+            }
+        ],
+        "fieldReportsEyebrow": "Field reports",
+        "moreUpdatesTitle": "More updates",
+        "itemsLabel": "items",
+        "itemLabel": "item",
+        "featuredBadge": "Featured",
+        "readFullStory": "Read the full story",
+        "readShort": "Read",
+        "ctaEyebrow": "Translate it into action",
+        "ctaTitle": "Headline catching your eye? Find out if it affects your business.",
+        "ctaBody": "30 minutes with the principal. We’ll tell you whether the regulation, ruling, or trend applies to you — and what to do about it.",
+        "ctaBook": "Book the call",
+        "ctaScan": "Run the 60-second scan",
+        "emptyTitle": "No updates yet",
+        "emptyBody": "Curated MOM, CPF, TAFEP, and AGC updates will appear here as soon as they’re relevant to Singapore employers.",
+        "emptyCtaScan": "Run the 60-second compliance scan",
+        "emptyCtaBook": "Book a consultation",
+        "backToList": "Back to HR News",
+        "readOriginal": "Read the original at",
+        "detailNotFoundTitle": "Article not found",
+        "detailNotFoundBody": "This article may have been removed or is not yet published."
+    },
+    "media": {
+        "badge": "@askbeebeesghr",
+        "title": "Media",
+        "desc": "Artfully curated insights for founders by experts who care.",
+        "followTikTok": "Follow @askbeebeesghr",
+        "ctaTitle": "Want More Expert Tips?",
+        "ctaDesc": "Follow us on TikTok for daily updates on Singapore business needs.",
+        "facebook": "Facebook",
+        "linkedin": "LinkedIn",
+        "videos": [
+            {
+                "title": "Expert Insights",
+                "subtitle": "Curated content for Singapore business leaders."
+            },
+            {
+                "title": "HR Compliance Guide",
+                "subtitle": "Everything you need to know about Singapore HR."
+            },
+            {
+                "title": "Business Strategy Tips",
+                "subtitle": "Strategic advice for growing your business."
+            },
+            {
+                "title": "Workforce Management",
+                "subtitle": "Best practices in managing your team."
+            },
+            {
+                "title": "Compliance Updates",
+                "subtitle": "Latest Singapore employment regulations."
+            },
+            {
+                "title": "Growth Strategies",
+                "subtitle": "Scale your business with confidence."
+            }
+        ]
+    },
+    "employmentLaws": {
+        "title": "Singapore Employment Laws",
+        "desc": "Key legislation every Singapore employer must know — from the Employment Act to the Workplace Fairness Act.",
+        "keyPoints": "Key Points",
+        "readMore": "Read More on MOM Website",
+        "ctaTitle": "Need help ensuring your business is compliant?",
+        "ctaDesc": "Our MOM-registered HR consultants can audit your practices and guide you through every regulation.",
+        "ctaButton": "Book Free Compliance Consultation",
+        "laws": [
+            {
+                "icon": "📋",
+                "name": "Employment Act",
+                "short": "EA",
+                "desc": "Core legislation covering employment contracts, working hours, overtime, leave entitlements, and termination for employees in Singapore.",
+                "keyPoints": [
+                    "Covers all employees except public servants, domestic workers, and seafarers",
+                    "Mandates itemised payslips for all covered employees",
+                    "Sets minimum annual leave, sick leave, maternity/paternity entitlements",
+                    "Governs rest days, overtime rates, and salary payment timelines",
+                    "Requires written employment contracts from Day 1"
+                ],
+                "link": "https://www.mom.gov.sg/employment-practices/employment-act"
+            },
+            {
+                "icon": "🌏",
+                "name": "Employment of Foreign Manpower Act",
+                "short": "EFMA",
+                "desc": "Regulates the employment of foreign workers and professionals in Singapore, governing work passes, employer obligations, and penalties.",
+                "keyPoints": [
+                    "Governs Employment Pass, S Pass, Work Permit, Tech Pass, and EntrePass",
+                    "Mandates Fair Consideration Framework (FCF) job advertising requirements",
+                    "Sets employer obligations for work pass holders' medical insurance",
+                    "Penalties for illegal employment include fines and blacklisting",
+                    "Employers must maintain valid work passes for all foreign employees"
+                ],
+                "link": "https://www.mom.gov.sg/passes-and-permits"
+            },
+            {
+                "icon": "🏥",
+                "name": "Work Injury Compensation Act",
+                "short": "WICA",
+                "desc": "Protects employees injured at work or who contract occupational diseases. Provides compensation without requiring proof of employer negligence.",
+                "keyPoints": [
+                    "Covers all employees except domestic workers and the self-employed",
+                    "Mandatory Work Injury Compensation Insurance for manual and lower-paid workers",
+                    "Employers must report work accidents to MOM within 10 days",
+                    "Compensation for medical expenses, temporary incapacity, and permanent disability",
+                    "Death compensation payable to dependants"
+                ],
+                "link": "https://www.mom.gov.sg/workplace-safety-and-health/work-injury-compensation"
+            },
+            {
+                "icon": "⚖️",
+                "name": "Workplace Fairness Act",
+                "short": "WFA",
+                "desc": "Strengthens protections against workplace discrimination. Employers must not discriminate based on protected characteristics including age, race, religion, gender, and disability.",
+                "keyPoints": [
+                    "Prohibits discrimination in hiring, retrenchment, and employment terms",
+                    "Protected characteristics: age, race, religion, gender, nationality, disability, marital status",
+                    "Requires employers to have formal grievance handling processes",
+                    "Employees can file complaints with MOM or TAFEP",
+                    "Retaliation against complainants is prohibited"
+                ],
+                "link": "https://www.mom.gov.sg/employment-practices/workplace-fairness-legislation"
+            },
+            {
+                "icon": "💰",
+                "name": "Central Provident Fund Act",
+                "short": "CPF Act",
+                "desc": "Mandates social security contributions for Singapore Citizens and Permanent Residents. Governs contribution rates, account types, and employer obligations.",
+                "keyPoints": [
+                    "Applies to all SC and PR employees regardless of salary",
+                    "2026 ordinary wage ceiling: S$8,000/month",
+                    "Employer contribution rates vary by employee age bracket",
+                    "CPF must be paid by 14th of the following month",
+                    "Late contributions attract penalties and interest"
+                ],
+                "link": "https://www.cpf.gov.sg/employer"
+            },
+            {
+                "icon": "🤝",
+                "name": "TAFEP Guidelines",
+                "short": "TAFEP",
+                "desc": "The Tripartite Alliance for Fair and Progressive Employment Practices sets guidelines for fair hiring, workplace harassment, and inclusive workplace practices.",
+                "keyPoints": [
+                    "Fair Consideration Framework (FCF) — job ads must be on MyCareersFuture for ≥28 days",
+                    "Job criteria must be based on genuine requirements, not nationality or demographics",
+                    "Employers must keep records of hiring decisions for 2 years",
+                    "Sexual harassment policies must be in place for all employers",
+                    "TAFEP audits target companies with high foreign employee ratios"
+                ],
+                "link": "https://www.tafep.sg"
+            },
+            {
+                "icon": "📊",
+                "name": "Fair Hiring Framework",
+                "short": "FHF",
+                "desc": "A set of principles and practices to ensure merit-based, fair, and progressive hiring across Singapore's workforce.",
+                "keyPoints": [
+                    "All job postings must comply with TAFEP's Tripartite Guidelines",
+                    "Selection criteria must be job-relevant and non-discriminatory",
+                    "Employers must document and be able to justify all hiring decisions",
+                    "Covers recruitment, promotion, and retrenchment decisions",
+                    "Non-compliance can result in work pass privileges being curtailed"
+                ],
+                "link": "https://www.tafep.sg/fair-hiring"
+            }
+        ]
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last updated: April 2026",
+        "sections": [
+            {
+                "heading": "1. Information We Collect",
+                "body": "We collect information you provide directly to us, such as your name, email address, phone number, company name, and any messages submitted via our contact or consultation forms. We may also collect usage data and analytics when you visit our website."
+            },
+            {
+                "heading": "2. How We Use Your Information",
+                "body": "We use the information we collect to respond to your enquiries, provide our HR consulting and advisory services, process consultation bookings, send relevant service information, and improve our website and services."
+            },
+            {
+                "heading": "3. Data Sharing",
+                "body": "We do not sell or rent your personal data to third parties. We may share information with trusted service providers (such as email and CRM tools) who assist us in operating our website and delivering our services, subject to strict confidentiality obligations."
+            },
+            {
+                "heading": "4. Data Retention",
+                "body": "We retain your personal data for as long as necessary to fulfil the purposes outlined in this policy, or as required by law. You may request deletion of your data at any time by contacting us at enquiry@hccs.sg."
+            },
+            {
+                "heading": "5. Security",
+                "body": "We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, or disclosure. Our website uses HTTPS encryption and our databases are secured with access controls."
+            },
+            {
+                "heading": "6. Cookies",
+                "body": "Our website uses cookies and similar tracking technologies to improve user experience and analyse site traffic. You may disable cookies in your browser settings, though this may affect some site functionality."
+            },
+            {
+                "heading": "7. Your Rights",
+                "body": "Under Singapore's Personal Data Protection Act (PDPA), you have the right to access, correct, and withdraw consent for the use of your personal data. To exercise these rights, contact us at enquiry@hccs.sg."
+            },
+            {
+                "heading": "8. Contact Us",
+                "body": "For any privacy-related queries or requests, please contact Human Capital Consulting & Services (Spore) Pte Ltd at enquiry@hccs.sg or via our contact form."
+            }
+        ]
+    },
+    "terms": {
+        "title": "Terms of Service",
+        "lastUpdated": "Last updated: April 2026",
+        "sections": [
+            {
+                "heading": "1. Acceptance of Terms",
+                "body": "By accessing or using the HCCS website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services."
+            },
+            {
+                "heading": "2. Services",
+                "body": "HCCS provides HR consulting, immigration advisory, compliance scanning tools, and AI-powered HR resources. Our services are provided on a professional advisory basis and do not constitute legal advice. For legal matters, please consult a qualified Singapore advocate and solicitor."
+            },
+            {
+                "heading": "3. Intellectual Property",
+                "body": "All content on this website, including text, templates, tools, and branding, is the property of Human Capital Consulting & Services (Spore) Pte Ltd. Reproduction or redistribution without written consent is prohibited."
+            },
+            {
+                "heading": "4. Membership & Payment",
+                "body": "Membership plans are billed annually. All payments are processed securely via Stripe. Refunds are evaluated on a case-by-case basis. By subscribing, you authorise HCCS to charge your designated payment method for the applicable subscription fee."
+            },
+            {
+                "heading": "5. Disclaimer of Warranties",
+                "body": "Our services and website content are provided \"as is\" without warranty of any kind, express or implied. HCCS makes no representations regarding the accuracy, completeness, or suitability of information for any particular purpose."
+            },
+            {
+                "heading": "6. Limitation of Liability",
+                "body": "To the maximum extent permitted by Singapore law, HCCS shall not be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of our services, even if advised of the possibility of such damages."
+            },
+            {
+                "heading": "7. Governing Law",
+                "body": "These Terms of Service are governed by the laws of the Republic of Singapore. Any disputes shall be subject to the exclusive jurisdiction of the Singapore courts."
+            },
+            {
+                "heading": "8. Contact",
+                "body": "For any queries regarding these terms, contact enquiry@hccs.sg."
+            }
+        ]
+    },
+    "login": {
+        "signInTitle": "Welcome Back",
+        "registerTitle": "Create Your Account",
+        "tabSignIn": "Sign In",
+        "tabRegister": "Register",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "you@example.com",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "••••••••",
+        "confirmPasswordLabel": "Confirm Password",
+        "confirmPasswordPlaceholder": "••••••••",
+        "signInButton": "Sign In",
+        "registerButton": "Create Account",
+        "signingIn": "Signing in...",
+        "registering": "Registering...",
+        "forgotPassword": "Forgot Password?",
+        "errors": {
+            "passwordLength": "Password must be at least 6 characters.",
+            "passwordMismatch": "Passwords do not match.",
+            "registrationFailed": "Registration failed. Please try again.",
+            "loginFailed": "Login failed. Please check your credentials.",
+            "genericError": "An error occurred. Please try again."
+        },
+        "notices": {
+            "registrationSuccess": "Registration successful. Please sign in."
+        }
+    },
+    "memberPortal": {
+        "title": "Member Portal",
+        "welcomeBack": "Welcome back",
+        "welcomeDesc": "Your AI HR tools and premium resources are ready.",
+        "aiTitle": "AI HR Assistant",
+        "aiDesc": "Singapore MOM · CPF · TAFEP · Employment Act",
+        "noAssistant": "AI assistant is not available for your current plan.",
+        "videoTitle": "Video Insights Library",
+        "quickAccessTitle": "Quick Access",
+        "tierLabel": "Your Plan",
+        "upgradeButton": "Upgrade Plan",
+        "locked": "Locked",
+        "duration": "Duration",
+        "quickLinks": [
+            {
+                "label": "Book a Consultation",
+                "href": "/consultation"
+            },
+            {
+                "label": "Free Compliance Scan",
+                "href": "/compliance-scan"
+            },
+            {
+                "label": "HR News",
+                "href": "/hr-news"
+            },
+            {
+                "label": "Employment Laws",
+                "href": "/employment-laws"
+            },
+            {
+                "label": "Contact Support",
+                "href": "/contact"
+            }
+        ]
+    },
+    "about": {
+        "heroTitle": "About Us",
+        "heroDesc": "Strategically building your Singapore workforce with expertise and integrity.",
+        "visionTitle": "Our Vision",
+        "missionTitle": "Our Mission",
+        "beliefTitle": "Our Belief",
+        "valuesTitle": "Our Core Values",
+        "teamTitle": "Our Leadership",
+        "advisorsTitle": "Advisory Panel",
+        "readProfile": "Read Full Profile",
+        "closeProfile": "Close ✕",
+        "keyAchievements": "Key Achievements",
+        "coreCompetencies": "Core Competencies",
+        "professionalQualifications": "Professional Qualifications",
+        "professionalBackground": "Professional Background",
+        "areasOfExpertise": "Areas of Expertise",
+        "educationCredentials": "Education & Credentials",
+        "visionMissionBelief": [
+            {
+                "title": "Our Vision",
+                "description": "To be a trusted partner and steady backbone for business owners and global talent — delivering people-first, compliant, and forward-looking HR solutions."
+            },
+            {
+                "title": "Our Mission",
+                "description": "We support entrepreneurs, SMEs, multinational companies, and foreign professionals through every stage of their journey — from business setup and immigration to HR management, statutory compliance, and AI-enabled HR solutions."
+            },
+            {
+                "title": "Our Belief",
+                "description": "\"We are not just here to process documents or manage compliance. We exist to carry the weight behind the scenes — so our clients can move forward 安心、踏实、从心出发。\""
+            }
+        ],
+        "principalEyebrow": "Founder & Principal Consultant",
+        "principalName": "Ker Bee Bee",
+        "principalBio": "IHRP-CP certified, ACTA-certified trainer with over 25 years of experience. Ker Bee Bee has secured over $5M in government training grants and is a regular speaker on the Employment Act and HR compliance. She serves on company boards and is deeply committed to people-first HR leadership.",
+        "principalServices": [
+            "Strategic Workforce Planning",
+            "Employee Engagement & Wellness",
+            "HR Tech & AI Integration",
+            "ESG, DEI & Purpose-Driven Culture",
+            "Compliance & Risk Management",
+            "Fractional / Outsourced HR Leadership"
+        ],
+        "principalQuote": "“We provide the reliable backbone so you can move forward with confidence.”",
+        "yearsExpLabel": "Years Experience",
+        "smesLabel": "SMEs Supported",
+        "ctaSubheading": "Book a free 30-minute consultation to discuss your HR and workforce needs.",
+        "closeLabel": "Close",
+        "values": [
+            {
+                "number": "01",
+                "title": "People-First Mindset",
+                "description": "We believe effective HR begins with understanding people. We practise emotional intelligence, active listening, and empathetic communication to support our clients through both opportunities and challenges — especially in moments of pressure, change, and uncertainty.",
+                "tags": [
+                    "Emotional Intelligence (EQ)",
+                    "Active Listening",
+                    "Empathy and Understanding",
+                    "Clear Communication"
+                ]
+            },
+            {
+                "number": "02",
+                "title": "Compliance Excellence",
+                "description": "Compliance is the foundation of sustainable business. We apply strong attention to detail, analytical thinking, and deep knowledge of HR regulations and employment laws to ensure our clients operate confidently, ethically, and in full alignment with statutory requirements.",
+                "tags": [
+                    "Attention to Detail",
+                    "Analytical Thinking",
+                    "Knowledge of HR Regulations",
+                    "Strong Organisational Skills"
+                ]
+            },
+            {
+                "number": "03",
+                "title": "Innovative Problem-Solving",
+                "description": "We look beyond standard solutions to address real business challenges. Through critical thinking, creativity, and adaptive decision-making, we help clients find practical, efficient, and future-ready approaches — including the use of AIHR — to reduce complexity and improve outcomes.",
+                "tags": [
+                    "Critical Thinking",
+                    "Creativity and Innovation",
+                    "Problem Analysis",
+                    "Sound Decision-Making",
+                    "Adaptability"
+                ]
+            },
+            {
+                "number": "04",
+                "title": "Collaborative Partnerships",
+                "description": "We work alongside our clients as trusted partners, not just service providers. By building strong relationships and practising open communication, negotiation, and teamwork, we co-create solutions and resolve issues constructively — even in complex or sensitive situations.",
+                "tags": [
+                    "Relationship Building",
+                    "Communication and Negotiation",
+                    "Teamwork and Influencing",
+                    "Conflict Resolution"
+                ]
+            },
+            {
+                "number": "05",
+                "title": "Continuous Learning",
+                "description": "We believe growth begins with learning. We remain self-driven and reflective, continuously updating our knowledge, skills, and perspectives to stay relevant in an evolving regulatory, business, and technology landscape.",
+                "tags": [
+                    "Self-Motivation and Initiative",
+                    "Willingness to Learn",
+                    "Analytical Reflection",
+                    "Time Management"
+                ]
+            },
+            {
+                "number": "06",
+                "title": "Client-Centric Service",
+                "description": "Everything we do starts with our clients' needs. We listen carefully, respond promptly, and focus on practical solutions — delivering not just services, but reassurance, reliability, and measurable results.",
+                "tags": [
+                    "Customer Service Orientation",
+                    "Understanding Client Needs",
+                    "Clear Communication",
+                    "Responsive Problem-Solving"
+                ]
+            }
+        ],
+        "advisors": [
+            {
+                "id": "jennifer",
+                "name": "Jennifer Yang",
+                "role": "Lead Consultant | Strategic HR & People Systems",
+                "bio": "Business-minded HR leader with 20+ years bridging commercial strategy and people systems."
+            },
+            {
+                "id": "loh",
+                "name": "Loh Hoon Sun",
+                "role": "Senior Strategic Advisor | Capital Markets & Wealth Structuring",
+                "bio": "Over five decades of cross-border experience, former Managing Director of Phillip Securities."
+            },
+            {
+                "id": "ung",
+                "name": "Ung Gim Sei",
+                "role": "Intellectual Property & Media Law Advisor",
+                "bio": "Focuses on intellectual property matters including trademark applications and internet/media law."
+            },
+            {
+                "id": "james",
+                "name": "James Lee Ah Fong",
+                "role": "Senior Lawyer & Independent Director",
+                "bio": "Admitted to Singapore Bar in 1981 with 35+ years of active legal practice in Singapore."
+            }
+        ],
+        "profiles": {
+            "florence": {
+                "title": "About Ker Bee Bee",
+                "role": "Strategic HR Executive & Trusted People Advisor",
+                "intro": "Ker Bee Bee is a strategic, results-oriented HR executive and trusted people advisor with over 25 years of leadership experience across listed companies, multinational corporations, and SMEs, spanning energy, oil and gas, manufacturing, engineering, and F&B industries.",
+                "stats": [
+                    {
+                        "label": "Years Experience",
+                        "value": "25+"
+                    },
+                    {
+                        "label": "SMEs Supported",
+                        "value": "500+"
+                    },
+                    {
+                        "label": "Grants Secured",
+                        "value": "$5M+"
+                    },
+                    {
+                        "label": "MOM Award",
+                        "value": "2017"
+                    }
+                ],
+                "sections": [
+                    {
+                        "heading": "Core Competencies",
+                        "items": [
+                            "End-to-end HR leadership across talent acquisition, C&B, L&D, policy, organisation development, and HRBP functions.",
+                            "Change management, digital transformation, and HR due diligence for M&A and restructuring.",
+                            "Regional ASEAN workforce leadership and cross-cultural people management.",
+                            "Board-level HR initiatives, IPO readiness, and remuneration committee support."
+                        ]
+                    },
+                    {
+                        "heading": "Professional Qualifications",
+                        "items": [
+                            "MSc in Organisational Development & HRM (Baruch College, City University of New York).",
+                            "Bachelor of Business Administration (University of South Australia).",
+                            "ACTA Trainer; Prosci Certified Change Management Professional; IHRP-CP.",
+                            "Certifications in HR agility, data analytics, internal auditing, and transformation leadership."
+                        ]
+                    },
+                    {
+                        "heading": "Key Achievements",
+                        "items": [
+                            "Secured over $5M in government training grants for companies.",
+                            "Winner of the MOM Tripartite Standards Award for HR Excellence (2017).",
+                            "Supported IPO readiness and strategic remuneration committee advisory work.",
+                            "Led regional and global expansion projects with major cost savings outcomes."
+                        ]
+                    }
+                ]
+            },
+            "jennifer": {
+                "title": "Ms Jennifer Yang",
+                "role": "Lead Consultant | Strategic HR & People Systems",
+                "intro": "Jennifer Yang is a business-minded HR leader with over 20 years of experience in bridging commercial strategy and people systems.",
+                "sections": [
+                    {
+                        "heading": "Professional Background",
+                        "items": [
+                            "Over 20 years of experience in regional HR leadership and strategic consulting.",
+                            "Expert in scalable people systems for SMEs and multinational corporations.",
+                            "Strong track record in organisational transformation and cultural integration.",
+                            "Specialist in workforce planning and performance management frameworks."
+                        ]
+                    },
+                    {
+                        "heading": "Areas of Expertise",
+                        "items": [
+                            "Strategic HR Leadership",
+                            "People Systems & Infrastructure",
+                            "Organisational Scaling & Development",
+                            "Cross-cultural Collaboration & Management",
+                            "Workforce Transformation"
+                        ]
+                    }
+                ]
+            },
+            "loh": {
+                "title": "Mr Loh Hoon Sun (骆云山)",
+                "role": "Senior Strategic Advisor | Capital Markets & Wealth Structuring",
+                "intro": "Loh Hoon Sun is a highly regarded senior advisor in capital markets and wealth structuring with over five decades of cross-border experience across Singapore, Australia, and Malaysia.",
+                "sections": [
+                    {
+                        "heading": "Professional Background",
+                        "items": [
+                            "Senior Advisor and former Managing Director at Phillip Securities.",
+                            "Former EVP and Head of Treasury & Investment Banking at OUB.",
+                            "Served on boards including SGX, SIMEX, and ACRA.",
+                            "First Class Honours in Economics from The University of Queensland."
+                        ]
+                    },
+                    {
+                        "heading": "Areas of Expertise",
+                        "items": [
+                            "Banking & Securities",
+                            "Asset Management & Wealth Structuring",
+                            "Real Estate & Resource-based Industries",
+                            "Governance & Capital Preservation"
+                        ]
+                    },
+                    {
+                        "heading": "Education & Credentials",
+                        "items": [
+                            "FCPA Australia",
+                            "CA Malaysia",
+                            "FCA Singapore",
+                            "FSID"
+                        ]
+                    }
+                ]
+            },
+            "ung": {
+                "title": "Mr Ung Gim Sei",
+                "role": "Intellectual Property & Media Law Advisor",
+                "intro": "Mr Ung Gim Sei focuses on intellectual property matters, including trademark applications and internet/media law, with 27 years of media industry leadership before legal practice.",
+                "sections": [
+                    {
+                        "heading": "Professional Background",
+                        "items": [
+                            "Admitted to legal practice in 2003 after a 27-year media career.",
+                            "Former Managing Director of Nanyang Siang Pau and Group General Manager at SPH.",
+                            "General Manager of Shen Sin Daily with a special China circulation license.",
+                            "Legal advisor to multiple associations and organisations."
+                        ]
+                    },
+                    {
+                        "heading": "Areas of Expertise",
+                        "items": [
+                            "Intellectual Property & Trademarks",
+                            "Internet & Media Law",
+                            "Cyber Defamation",
+                            "Chinese & Comparative Laws"
+                        ]
+                    },
+                    {
+                        "heading": "Education & Honours",
+                        "items": [
+                            "LL.M. (Distinction) in Chinese and Comparative Laws, City University of Hong Kong.",
+                            "Graduate Diploma in Singapore Law, NUS.",
+                            "PBM award recipient for cultural promotion."
+                        ]
+                    }
+                ]
+            },
+            "james": {
+                "title": "Mr James Lee Ah Fong",
+                "role": "Senior Lawyer & Independent Director",
+                "intro": "Mr James Lee is a senior lawyer with decades of active legal practice in Singapore across criminal, civil, and family law matters.",
+                "sections": [
+                    {
+                        "heading": "Professional Background",
+                        "items": [
+                            "Partner at Ng, Lee & Partners and admitted to the Singapore Bar in 1981.",
+                            "Former Assistant Superintendent of Police with FBI National Academy training.",
+                            "Former President of Singapore Hainan Hwee Kuan.",
+                            "Independent Director for listed companies including Cortina Holdings, TEE International, and TA Corporation."
+                        ]
+                    },
+                    {
+                        "heading": "Areas of Expertise",
+                        "items": [
+                            "Criminal & Civil Litigation",
+                            "Family Law",
+                            "General Solicitor Work",
+                            "Corporate Governance & Directorship"
+                        ]
+                    },
+                    {
+                        "heading": "Credentials",
+                        "items": [
+                            "Barrister-at-Law (Middle Temple)"
+                        ]
+                    }
+                ]
+            }
+        },
+        "valuesEyebrow": "Our values",
+        "advisorsEyebrow": "Advisory board",
+        "ctaEyebrow": "Next step"
+    },
+    "dynamicPages": {
+        "tafepLabel": "TAFEP",
+        "passesLabel": "Passes & Permits",
+        "workplaceSafetyLabel": "Workplace Safety & Health",
+        "employmentPracticesLabel": "Employment Practices",
+        "exploreMoreResources": "Explore More Resources"
+    },
+    "auth": {
+        "loginHeading": "Welcome back",
+        "signupHeading": "Create your account",
+        "loginSubtitle": "Sign in to access your member workspace.",
+        "signupSubtitle": "Sign up with your email to start using HCCS member access.",
+        "loginTab": "Login",
+        "signupTab": "Sign up",
+        "emailLabel": "Email",
+        "passwordLabel": "Password",
+        "emailPlaceholder": "you@company.com",
+        "passwordPlaceholder": "At least 6 characters",
+        "submitLoginIdle": "Login",
+        "submitSignupIdle": "Create account",
+        "submitWait": "Please wait...",
+        "signupSuccess": "Signup successful. Check your email for a confirmation link, then log in.",
+        "homeLinkPre": "Return to ",
+        "homeLinkText": "home page",
+        "eyebrow": "HCCS access"
+    },
+    "testimonials": [
+        {
+            "name": "ComfortDelGro Group",
+            "role": "Strategic Workforce Advisory",
+            "quote": "HCCS provided strategic workforce advisory, HR digital transformation support, and industrial relations expertise to selected entities within the ComfortDelGro Group."
+        },
+        {
+            "name": "Amer Group",
+            "role": "Executive Search",
+            "quote": "HCCS provided end-to-end HR architecture support, executive search expertise, and cross-border workforce advisory to build a scalable HR foundation."
+        },
+        {
+            "name": "Mr Ong Beng Ann",
+            "role": "Chairman / CEO, Fullion Group",
+            "quote": "Under Ker Bee Bee's guidance, Fullion Holdings strengthened HR foundations and secured significant HR compliance and transformation grants."
+        },
+        {
+            "name": "RH Synergy",
+            "role": "Management and HR",
+            "quote": "During business transformation, HCCS delivered stringent HR compliance support and strategic workforce restructuring guidance."
+        },
+        {
+            "name": "Idemitsu",
+            "role": "HR and Operations",
+            "quote": "HCCS delivered qualified recruitment outcomes quickly while ensuring full MOM compliance throughout the hiring process."
+        },
+        {
+            "name": "Janice Foo",
+            "role": "Former Senior Consultant, WSG",
+            "quote": "Ker Bee Bee produced exceptional results in placement strategy and talent matching across multiple industries."
+        }
+    ],
+    "complianceScanV1": {
+        "badge": "Free · One-Time Scan",
+        "title": "HR Compliance Risk Scan",
+        "desc": "Find out if your company is exposed to MOM regulatory risk. Answer 10 quick questions and receive an instant compliance score, risk rating, and recommended corrective actions — at no cost.",
+        "startScan": "Start Free Scan",
+        "takesNote": "Takes about 3 minutes · No account required",
+        "whatYouReceive": "What You'll Receive",
+        "receiveItems": [
+            {
+                "icon": "📊",
+                "title": "Compliance Score",
+                "desc": "An instant percentage score across 10 key HR compliance areas."
+            },
+            {
+                "icon": "⚠️",
+                "title": "Risk Level Rating",
+                "desc": "Categorised as Low, Medium, High, or Critical risk with a plain-English explanation."
+            },
+            {
+                "icon": "📋",
+                "title": "Action Checklist",
+                "desc": "Specific corrective steps tailored to the gaps identified in your answers."
+            }
+        ],
+        "areasTitle": "10 Areas Covered",
+        "areas": [
+            "Employment Contracts",
+            "Payslips",
+            "CPF",
+            "Foreign Workers",
+            "Fair Hiring",
+            "Leave Entitlements",
+            "Work Injury",
+            "Anti-Discrimination",
+            "Retrenchment",
+            "HR Records"
+        ],
+        "ctaTitle": "Ready to check your compliance status?",
+        "ctaDesc": "Free, instant, and no account required.",
+        "ctaButton": "Start Free Scan →",
+        "steps": [
+            "Company Details",
+            "Introduction",
+            "Questions",
+            "Results"
+        ],
+        "companyDetails": {
+            "heading": "Your Details",
+            "subheading": "We'll use this to personalise your compliance report.",
+            "fullName": "Full Name",
+            "businessEmail": "Business Email",
+            "companyName": "Company Name",
+            "mobileNumber": "Mobile Number",
+            "industryLabel": "Industry",
+            "sizeLabel": "Company Size",
+            "foreignWorkersLabel": "Do you employ foreign workers?",
+            "yes": "Yes",
+            "no": "No",
+            "selectIndustry": "Select an industry...",
+            "selectSize": "Select company size...",
+            "continue": "Continue →"
+        },
+        "intro": {
+            "helloPrefix": "Hello, ",
+            "aboutPrefix": "You're about to assess ",
+            "aboutSuffix": " against Singapore's key HR compliance requirements.",
+            "timingTitle": "Takes about 3 minutes",
+            "timingDesc": "10 questions across key MOM compliance areas",
+            "honestTitle": "Answer honestly",
+            "honestDesc": "Your score is only as accurate as your answers. When in doubt, choose \"Not Sure\".",
+            "resultsTitle": "Get instant results",
+            "resultsDesc": "Your compliance score, risk level, and recommended actions will appear immediately.",
+            "back": "← Back",
+            "start": "Start Questions →"
+        },
+        "questionsPage": {
+            "heading": "HR Compliance Questions",
+            "answeredLabel": "answered",
+            "back": "← Back",
+            "submitReady": "Get My Compliance Score →",
+            "submitWaiting": "Answer all questions to continue",
+            "analysing": "Analysing Your Responses",
+            "analysingDesc": "AIHR is now analysing your responses based on key Singapore HR compliance risk indicators.",
+            "resultsHeading": "Your Compliance Results",
+            "totalScore": "Total Score",
+            "outOf": "out of",
+            "points": "points",
+            "riskLevelLabel": "Risk Level",
+            "primaryRiskLabel": "Primary Risk:",
+            "breakdownTitle": "Category Risk Breakdown",
+            "nextStepsTitle": "Next Steps",
+            "disclaimer": "This assessment is based on your responses and provides guidance only — not legal advice.",
+            "bookReview": "Book Expert Review",
+            "downloadPDF": "Download Report (PDF)",
+            "mixedRisk": "Mixed Compliance Risk",
+            "generalCompliance": "General Compliance",
+            "momAlert": "MOM Risk Alert: Possible gaps in contracts, payslips, records or termination process.",
+            "cpfAlert": "CPF Risk Alert: CPF process may lack verification or control.",
+            "tafepAlert": "TAFEP Risk Alert: Recruitment practices may not align with fair employment principles.",
+            "riskLevels": {
+                "LOW": {
+                    "label": "Low Risk",
+                    "subtitle": "Your company has solid HR compliance foundations",
+                    "description": "Your responses indicate a generally sound HR compliance structure. Continue periodic reviews to stay aligned with evolving regulations.",
+                    "recommendations": [
+                        "Maintain current compliance processes",
+                        "Schedule quarterly HR compliance audits",
+                        "Monitor MOM updates regularly",
+                        "Document all HR policies"
+                    ]
+                },
+                "MEDIUM": {
+                    "label": "Medium Risk",
+                    "subtitle": "Several compliance areas need attention",
+                    "description": "While no immediate critical issues detected, addressing identified gaps will reduce regulatory and operational risk.",
+                    "recommendations": [
+                        "Review and update employment contracts",
+                        "Strengthen HR documentation systems",
+                        "Conduct fair hiring practice audit",
+                        "Schedule compliance review with expert"
+                    ]
+                },
+                "HIGH": {
+                    "label": "High Risk",
+                    "subtitle": "Critical compliance gaps require immediate attention",
+                    "description": "Your company has critical HR compliance areas that need urgent review. Taking immediate action will significantly reduce regulatory exposure.",
+                    "recommendations": [
+                        "Book urgent compliance review",
+                        "Create corrective action plan",
+                        "Audit all employment documentation",
+                        "Review foreign worker management"
+                    ]
+                }
+            },
+            "questions": [
+                {
+                    "question": "Do you currently employ foreign workers such as EP, S Pass or Work Permit holders?",
+                    "options": [
+                        "Yes, many",
+                        "Yes, a few",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are CPF contributions calculated and submitted with proper checks in place?",
+                    "options": [
+                        "Yes, with clear internal checks",
+                        "Yes, but checks are informal",
+                        "Not sure or fully outsourced without checks"
+                    ]
+                },
+                {
+                    "question": "Do all employees have updated employment contracts aligned with MOM Key Employment Terms?",
+                    "options": [
+                        "Yes, reviewed within last 12 months",
+                        "Yes, but not recently reviewed",
+                        "No or not sure"
+                    ]
+                },
+                {
+                    "question": "Do you issue itemised payslips in line with MOM requirements?",
+                    "options": [
+                        "Yes",
+                        "Partially",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are your foreign employees' job roles, salaries and responsibilities aligned with MOM expectations?",
+                    "options": [
+                        "Yes",
+                        "Not fully sure",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Do you maintain proper HR records such as leave, attendance, contracts and warning letters?",
+                    "options": [
+                        "Yes, in a structured system",
+                        "Partially",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Do you have a clear process for employee termination and dispute handling?",
+                    "options": [
+                        "Yes",
+                        "Informal only",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Does your company follow fair hiring practices and avoid potentially discriminatory recruitment language?",
+                    "options": [
+                        "Yes",
+                        "Not fully sure",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Do you actively monitor updates from MOM, CPF and TAFEP?",
+                    "options": [
+                        "Yes, regularly",
+                        "Occasionally",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Do you have dedicated HR expertise, either internal or external, supporting compliance matters?",
+                    "options": [
+                        "Yes",
+                        "Partial support only",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Does the Company has a Workplace Fairness Policy",
+                    "evidence": "Policy document",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Has senior management approved the policy?",
+                    "evidence": "Management approval records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Is the policy communicated to all employees?",
+                    "evidence": "Employee communication records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are job advertisements free from discriminatory wording?",
+                    "evidence": "Job advertisements",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are interview questions standardized?",
+                    "evidence": "Interview templates",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are hiring decisions documented objectively?",
+                    "evidence": "Interview assessment forms",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are compensation practices applied consistently?",
+                    "evidence": "Salary structure",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are appraisal criteria objective and measurable?",
+                    "evidence": "Appraisal forms",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are promotion opportunities communicated fairly?",
+                    "evidence": "Promotion records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Is there an anti-harassment policy?",
+                    "evidence": "Policy document",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Is there a Grievance Handling Policy in place",
+                    "evidence": "Policy Policy",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are employees informed how to raise workplace fairness concerns?",
+                    "evidence": "Employee handbook",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Do employees receive workplace fairness training?",
+                    "evidence": "Training attendance records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Does the company prohibit retaliation against complainants?",
+                    "evidence": "Policy document",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are promotion trends analyzed for fairness?",
+                    "evidence": "HR analytics reports",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are recruitment agencies required to follow fair employment practices?",
+                    "evidence": "Vendor contracts",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are older workers treated fairly in hiring and promotion?",
+                    "evidence": "HR records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are reasonable accommodations considered?",
+                    "evidence": "Accommodation records",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Are HR policies version-controlled?",
+                    "evidence": "Policy register",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                },
+                {
+                    "question": "Has the company performed a WFA readiness assessment?",
+                    "evidence": "Audit reports",
+                    "options": [
+                        "Yes",
+                        "No"
+                    ]
+                }
+            ]
+        }
+    }
+}

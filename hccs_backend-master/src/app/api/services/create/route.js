@@ -1,0 +1,26 @@
+import { NextResponse } from "next/server";
+import { requireAdmin } from 'src/lib/auth/require-role';
+import { createAdminClient } from 'src/lib/supabase/admin';
+
+export async function POST(request) {
+    const { error: __authError } = await requireAdmin();
+    if (__authError) return __authError;
+
+    const body = await request.formData();
+    const supabase = createAdminClient();
+
+    const payload = {
+        title: body.get("title"),
+        short_description: body.get("short_description"),
+        long_description: body.get("long_description"),
+        slug: body.get("slug"),
+    };
+
+    const { data, error } = await supabase.from("services").insert(payload).select().single();
+
+    if (!error) {
+        return NextResponse.json({ status: true, data });
+    } else {
+        return NextResponse.json({ status: false, message: error.message });
+    }
+}
