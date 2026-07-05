@@ -16,7 +16,6 @@ export default function ConsultationPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         {/* Header */}
         <header className="text-center mb-12">
-          <p className="eyebrow">Book a session</p>
           <h1 className="font-display text-3xl sm:text-4xl text-[#0d1f35] leading-tight mb-4">
             {c.title}
           </h1>
