@@ -23,7 +23,7 @@ const servicesOfInterest = [
 ];
 
 export default function ContactPage() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const c = t.contact;
   const [form, setForm] = useState({
     name: "", company: "", email: "", phone: "",
@@ -36,8 +36,13 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
+    e.currentTarget.setCustomValidity("");
     setForm({ ...form, [e.target.name]: e.target.value });
     setError("");
+  };
+
+  const handleInvalid = (e: React.InvalidEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    e.currentTarget.setCustomValidity(lang === "zh" ? "请填写此项" : "Please fill in this field.");
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -145,6 +150,7 @@ export default function ContactPage() {
                   required
                   value={form.name}
                   onChange={handleChange}
+                  onInvalid={handleInvalid}
                   className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4a84b]"
                   placeholder={c.namePlaceholder}
                 />
@@ -171,6 +177,7 @@ export default function ContactPage() {
                   required
                   value={form.email}
                   onChange={handleChange}
+                  onInvalid={handleInvalid}
                   className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4a84b]"
                   placeholder={c.emailPlaceholder}
                 />
@@ -227,6 +234,7 @@ export default function ContactPage() {
                 required
                 value={form.message}
                 onChange={handleChange}
+                onInvalid={handleInvalid}
                 rows={5}
                 className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-[#d4a84b] resize-none"
                 placeholder={c.messagePlaceholder}

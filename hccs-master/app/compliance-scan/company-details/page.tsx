@@ -26,7 +26,7 @@ const companySizes = [
 
 export default function CompanyDetailsPage() {
   const router = useRouter();
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const cd = t.complianceScan.companyDetails;
   const steps = t.complianceScan.steps;
   const [qrId, setQrId] = useState("");
@@ -43,7 +43,12 @@ export default function CompanyDetailsPage() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
+    e.currentTarget.setCustomValidity("");
     setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleInvalid = (e: React.InvalidEvent<HTMLInputElement | HTMLSelectElement>) => {
+    e.currentTarget.setCustomValidity(lang === "zh" ? "请填写此项" : "Please fill in this field.");
   };
 
   useEffect(() => {
@@ -97,18 +102,18 @@ export default function CompanyDetailsPage() {
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
                 <label className={labelCls}>{cd.fullName} *</label>
-                <input name="name" required value={form.name} onChange={handleChange} placeholder="Jane Smith" className={inputCls} />
+                <input name="name" required value={form.name} onChange={handleChange} onInvalid={handleInvalid} placeholder="Jane Smith" className={inputCls} />
               </div>
               <div>
                 <label className={labelCls}>{cd.businessEmail} *</label>
-                <input name="email" type="email" required value={form.email} onChange={handleChange} placeholder="jane@company.com" className={inputCls} />
+                <input name="email" type="email" required value={form.email} onChange={handleChange} onInvalid={handleInvalid} placeholder="jane@company.com" className={inputCls} />
               </div>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
                 <label className={labelCls}>{cd.companyName} *</label>
-                <input name="company" required value={form.company} onChange={handleChange} placeholder="Acme Pte Ltd" className={inputCls} />
+                <input name="company" required value={form.company} onChange={handleChange} onInvalid={handleInvalid} placeholder="Acme Pte Ltd" className={inputCls} />
               </div>
               <div>
                 <label className={labelCls}>{cd.mobileNumber}</label>
@@ -118,7 +123,7 @@ export default function CompanyDetailsPage() {
 
             <div>
               <label className={labelCls}>{cd.industryLabel} *</label>
-              <select name="industry" required value={form.industry} onChange={handleChange} className={inputCls}>
+              <select name="industry" required value={form.industry} onChange={handleChange} onInvalid={handleInvalid} className={inputCls}>
                 <option value="">{cd.selectIndustry}</option>
                 {industries.map((ind) => {
                   const labels = (cd as { industries?: Record<string,string> }).industries ?? {};
@@ -129,7 +134,7 @@ export default function CompanyDetailsPage() {
 
             <div>
               <label className={labelCls}>{cd.sizeLabel} *</label>
-              <select name="size" required value={form.size} onChange={handleChange} className={inputCls}>
+              <select name="size" required value={form.size} onChange={handleChange} onInvalid={handleInvalid} className={inputCls}>
                 <option value="">{cd.selectSize}</option>
                 {companySizes.map((s) => {
                   const labels = (cd as { sizes?: Record<string,string> }).sizes ?? {};

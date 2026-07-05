@@ -13,8 +13,12 @@ function AuthPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const initialMode = (searchParams.get("mode") as AuthMode) || "login";
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const a = (t as { auth?: Record<string, string> }).auth ?? {};
+
+  const handleInvalid = (e: React.InvalidEvent<HTMLInputElement>) => {
+    e.currentTarget.setCustomValidity(lang === "zh" ? "请填写此项" : "Please fill in this field.");
+  };
 
   const [mode, setMode] = useState<AuthMode>(initialMode === "signup" ? "signup" : "login");
   const [email, setEmail] = useState("");
@@ -122,7 +126,11 @@ function AuthPageContent() {
               id="email"
               type="email"
               value={email}
-              onChange={(event) => setEmail(event.target.value)}
+              onChange={(event) => {
+                event.currentTarget.setCustomValidity("");
+                setEmail(event.target.value);
+              }}
+              onInvalid={handleInvalid}
               required
               className="w-full rounded-lg border border-[#e5e0d2] bg-white px-3 py-2.5 text-sm text-[#0d1f35] placeholder:text-slate-400 transition-colors"
               placeholder={a.emailPlaceholder ?? "you@company.com"}
@@ -140,7 +148,11 @@ function AuthPageContent() {
               id="password"
               type="password"
               value={password}
-              onChange={(event) => setPassword(event.target.value)}
+              onChange={(event) => {
+                event.currentTarget.setCustomValidity("");
+                setPassword(event.target.value);
+              }}
+              onInvalid={handleInvalid}
               required
               minLength={6}
               className="w-full rounded-lg border border-[#e5e0d2] bg-white px-3 py-2.5 text-sm text-[#0d1f35] placeholder:text-slate-400 transition-colors"

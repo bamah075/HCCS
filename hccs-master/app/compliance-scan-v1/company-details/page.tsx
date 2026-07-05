@@ -26,7 +26,7 @@ const companySizes = [
 
 export default function CompanyDetailsPage() {
   const router = useRouter();
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const cd = t.complianceScanV1.companyDetails;
   const steps = t.complianceScanV1.steps;
   const [qrId, setQrId] = useState("");
@@ -43,7 +43,12 @@ export default function CompanyDetailsPage() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
+    e.currentTarget.setCustomValidity("");
     setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleInvalid = (e: React.InvalidEvent<HTMLInputElement | HTMLSelectElement>) => {
+    e.currentTarget.setCustomValidity(lang === "zh" ? "请填写此项" : "Please fill in this field.");
   };
 
   useEffect(() => {
@@ -97,6 +102,7 @@ export default function CompanyDetailsPage() {
                   required
                   value={form.name}
                   onChange={handleChange}
+                  onInvalid={handleInvalid}
                   placeholder="Jane Smith"
                   className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
@@ -109,6 +115,7 @@ export default function CompanyDetailsPage() {
                   required
                   value={form.email}
                   onChange={handleChange}
+                  onInvalid={handleInvalid}
                   placeholder="jane@company.com"
                   className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
@@ -123,6 +130,7 @@ export default function CompanyDetailsPage() {
                   required
                   value={form.company}
                   onChange={handleChange}
+                  onInvalid={handleInvalid}
                   placeholder="Acme Pte Ltd"
                   className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
@@ -147,6 +155,7 @@ export default function CompanyDetailsPage() {
                 required
                 value={form.industry}
                 onChange={handleChange}
+                onInvalid={handleInvalid}
                 className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
               >
                 <option value="">{cd.selectIndustry}</option>
@@ -163,6 +172,7 @@ export default function CompanyDetailsPage() {
                 required
                 value={form.size}
                 onChange={handleChange}
+                onInvalid={handleInvalid}
                 className="w-full border border-slate-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
               >
                 <option value="">{cd.selectSize}</option>

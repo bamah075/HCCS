@@ -9,7 +9,7 @@ import { supabase } from "@/lib/supabase/client"; // only used for setSession af
 import { useLang } from "@/lib/i18n";
 
 function LoginPageContent() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const l = t.login;
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -25,9 +25,14 @@ function LoginPageContent() {
   }, [searchParams]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.currentTarget.setCustomValidity("");
     setForm({ ...form, [e.target.name]: e.target.value });
     setError("");
     setNotice("");
+  };
+
+  const handleInvalid = (e: React.InvalidEvent<HTMLInputElement>) => {
+    e.currentTarget.setCustomValidity(lang === "zh" ? "请填写此项" : "Please fill in this field.");
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -170,6 +175,7 @@ function LoginPageContent() {
                 autoComplete="email"
                 value={form.email}
                 onChange={handleChange}
+                onInvalid={handleInvalid}
                 placeholder={l.emailPlaceholder}
                 className="w-full border border-[#e5e0d2] bg-white rounded-lg px-4 py-2.5 text-sm text-[#0d1f35] placeholder:text-slate-400"
               />
@@ -186,6 +192,7 @@ function LoginPageContent() {
                 autoComplete="current-password"
                 value={form.password}
                 onChange={handleChange}
+                onInvalid={handleInvalid}
                 placeholder={l.passwordPlaceholder}
                 className="w-full border border-[#e5e0d2] bg-white rounded-lg px-4 py-2.5 text-sm text-[#0d1f35] placeholder:text-slate-400"
               />
@@ -203,6 +210,7 @@ function LoginPageContent() {
                   autoComplete="new-password"
                   value={form.confirmPassword}
                   onChange={handleChange}
+                  onInvalid={handleInvalid}
                   placeholder={l.confirmPasswordPlaceholder}
                   className="w-full border border-[#e5e0d2] bg-white rounded-lg px-4 py-2.5 text-sm text-[#0d1f35] placeholder:text-slate-400"
                 />
