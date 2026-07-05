@@ -41,8 +41,7 @@ export default function ServicesPage() {
                     <div className="absolute -bottom-24 -left-24 h-80 w-80 rounded-full bg-[#2a5a8a]/20 blur-3xl" />
                 </div>
                 <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <p className="eyebrow eyebrow-on-dark">{s.badge}</p>
-                    <h1 className="font-display text-4xl sm:text-5xl leading-tight mb-5">{s.title}</h1>
+                    <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight mb-5">{s.title}</h1>
                     <span className="rule-gold mx-auto mb-6" />
                     <p className="text-slate-200 text-lg max-w-2xl mx-auto leading-relaxed mt-3">
                         {s.desc}

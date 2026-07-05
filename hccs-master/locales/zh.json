@@ -305,19 +305,19 @@
         "aihrMostPopular": "最受欢迎",
         "aihrTiers": [
             {
-                "name": "Free 免费版",
+                "name": "免费版",
                 "line": "自助式合规指引"
             },
             {
-                "name": "Essential 标准版",
+                "name": "标准版",
                 "line": "日常运作的 AI 人力资源助手"
             },
             {
-                "name": "Professional 专业版",
+                "name": "专业版",
                 "line": "审计就绪的政策库"
             },
             {
-                "name": "Strategic 战略版",
+                "name": "战略版",
                 "line": "随需咨询服务 + AI"
             }
         ],
@@ -525,7 +525,7 @@
     },
     "complianceScan": {
         "badge": "免费 · 一次性扫描",
-        "title": "人力资源合规风险扫描",
+        "title": "人力资源合规扫描",
         "desc": "了解您的公司是否面临人力部监管风险。回答10个简单问题，即刻获取合规分数、风险评级及建议纠正措施——完全免费。",
         "startScan": "开始免费扫描",
         "takesNote": "约需3分钟",

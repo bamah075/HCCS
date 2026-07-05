@@ -525,7 +525,7 @@
     },
     "complianceScan": {
         "badge": "Free · One-Time Scan",
-        "title": "HR Compliance Risk Scan",
+        "title": "HR Compliance Scan",
         "desc": "Find out if your company is exposed to MOM regulatory risk. Answer 10 quick questions and receive an instant compliance score, risk rating, and recommended corrective actions — at no cost.",
         "startScan": "Start Free Scan",
         "takesNote": "Takes about 3 minutes",
