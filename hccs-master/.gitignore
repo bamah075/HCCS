@@ -35,8 +35,9 @@ yarn-error.log*
 .env.*
 *.env
 
-# database dumps — NEVER commit
+# database dumps — NEVER commit. Exception: versioned schema migrations.
 *.sql
+!supabase/migrations/*.sql
 
 # vercel
 .vercel

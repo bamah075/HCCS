@@ -32,6 +32,7 @@ import { get_compliance_scans, get_compliance_scans_details } from 'src/componen
 import Iconify from 'src/components/iconify';
 import { useRouter } from 'src/routes/hooks';
 import { generateCompliancePdf, generateComplianceCsv } from './generate-compliance-pdf';
+import StandardDocumentCard from './StandardDocumentCard';
 
 export default function ComplianceScanListView() {
   const settings = useSettingsContext();
@@ -203,6 +204,7 @@ export default function ComplianceScanListView() {
 
   return (
     <Container maxWidth={settings.themeStretch ? false : 'xl'}>
+      <StandardDocumentCard />
       <Card>
         <CardHeader title="Compliance Scan Submissions" />
         <CardContent>

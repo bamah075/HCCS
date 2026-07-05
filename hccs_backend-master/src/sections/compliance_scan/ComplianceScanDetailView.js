@@ -33,6 +33,7 @@ import {
     COMPLIANCE_SCAN_SELECTIONS,
     REMARK_PRESETS,
 } from './compliance-scan-selections';
+import ComplianceDocumentsPanel from './ComplianceDocumentsPanel';
 
 export default function ComplianceScanDetailView({ id }) {
     const settings = useSettingsContext();
@@ -41,6 +42,7 @@ export default function ComplianceScanDetailView({ id }) {
     const [summary, setSummary] = useState({});
     const [answers, setAnswers] = useState([]);
     const [actionReports, setActionReports] = useState([]);
+    const [documents, setDocuments] = useState([]);
     const [actionChoiceMap, setActionChoiceMap] = useState({});
     const [actionOtherMap, setActionOtherMap] = useState({});
     const [remarksChoice, setRemarksChoice] = useState('');
@@ -77,6 +79,7 @@ export default function ComplianceScanDetailView({ id }) {
         setSummary(payload.summary || {});
         setAnswers(answerRows);
         setActionReports(Array.isArray(payload.action_reports) ? payload.action_reports : []);
+        setDocuments(Array.isArray(payload.documents) ? payload.documents : []);
         setSubmittedAt(scan?.created_at ? new Date(scan.created_at).toLocaleString() : '-');
         setActionChoiceMap({});
         setActionOtherMap({});
@@ -192,6 +195,7 @@ export default function ComplianceScanDetailView({ id }) {
                 </Stack>
             )}
             {scanData && (
+                <>
                 <Box
                     sx={{
                         display: 'grid',
@@ -476,6 +480,10 @@ export default function ComplianceScanDetailView({ id }) {
                         </CardContent>
                     </Card>
                 </Box>
+                <Box sx={{ mt: 3 }}>
+                    <ComplianceDocumentsPanel scanId={scanData.id} documents={documents} onUploaded={getData} />
+                </Box>
+                </>
             )}
         </Container>
     );
