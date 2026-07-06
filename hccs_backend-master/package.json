@@ -4,8 +4,8 @@
   "description": "HCCS staff admin panel (admin.hccs.sg)",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3033",
-    "start": "next start -p 3033",
+    "dev": "node api.js && next dev -p 3033",
+    "start": "node api.js && next start -p 3033",
     "build": "next build",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
