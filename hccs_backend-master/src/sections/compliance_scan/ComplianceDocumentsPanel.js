@@ -7,34 +7,58 @@ import {
     Button,
     Card,
     CardContent,
+    Chip,
     Stack,
+    TextField,
     Typography,
 } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
-import { regenerate_compliance_scan_document } from 'src/components/api/api';
+import Iconify from 'src/components/iconify';
+import { save_compliance_scan_document } from 'src/components/api/api';
 
-// Displays this lead's Document A/B/C generation history (normally created
-// automatically when they pay for the Expert Advisory consultation via the
-// Calendly webhook) and gives staff a manual "regenerate now" escape hatch
-// for edge cases — e.g. the webhook was down, or an override was set after
-// the fact and needs to be re-applied.
+// Staff upload a supplementary document (Document B) specific to this lead;
+// this immediately regenerates their report (Document A) and combines the
+// two into Document C. No automatic trigger — the upload is the trigger.
 export default function ComplianceDocumentsPanel({ scanId, documents, onUploaded }) {
-    const [regenerating, setRegenerating] = useState(false);
+    const [file, setFile] = useState(null);
+    const [notes, setNotes] = useState('');
+    const [uploading, setUploading] = useState(false);
     const [alertState, setAlertState] = useState(null);
 
-    const handleRegenerate = async () => {
-        if (!scanId) return;
-        setRegenerating(true);
+    const handleFileChange = (e) => {
+        const picked = e.target.files?.[0] ?? null;
+        if (picked && picked.type !== 'application/pdf') {
+            setAlertState({
+                severity: 'error',
+                message: "That file isn't a PDF. Please export/save it as a PDF first, then upload it.",
+            });
+            e.target.value = '';
+            setFile(null);
+            return;
+        }
         setAlertState(null);
-        const res = await regenerate_compliance_scan_document({ scan_id: scanId });
-        setRegenerating(false);
+        setFile(picked);
+    };
+
+    const handleUpload = async () => {
+        if (!scanId || !file) return;
+        setUploading(true);
+        setAlertState(null);
+        const res = await save_compliance_scan_document({
+            scan_id: scanId,
+            document_b_file: file,
+            notes,
+        });
+        setUploading(false);
 
         if (!res.status) {
-            setAlertState({ severity: 'error', message: res.message || 'Failed to regenerate combined document.' });
+            setAlertState({ severity: 'error', message: res.message || 'Failed to upload document.' });
             return;
         }
 
-        setAlertState({ severity: 'success', message: 'Combined document regenerated.' });
+        setFile(null);
+        setNotes('');
+        setAlertState({ severity: 'success', message: 'Document uploaded and combined report generated.' });
         await onUploaded?.();
     };
 
@@ -42,13 +66,13 @@ export default function ComplianceDocumentsPanel({ scanId, documents, onUploaded
         <Card>
             <CardContent>
                 <Typography variant="subtitle1" sx={{ mb: 0.5 }}>
-                    Combined Document History
+                    Supplementary Documents
                 </Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                    Document C is normally generated automatically once this lead pays for the Expert
-                    Advisory consultation. Use the button below to manually regenerate it now, using
-                    whichever document currently applies to this lead (their override if set, otherwise
-                    the global standard document).
+                    Upload a bespoke review (e.g. an employment-contract compliance check) against this
+                    submission. The system regenerates this user&apos;s standard report and merges it with
+                    your upload into a combined document — the user is not notified and receives nothing
+                    different.
                 </Typography>
 
                 {alertState && (
@@ -57,17 +81,40 @@ export default function ComplianceDocumentsPanel({ scanId, documents, onUploaded
                     </Alert>
                 )}
 
-                <LoadingButton variant="contained" loading={regenerating} onClick={handleRegenerate}>
-                    Regenerate Document C now
+                <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2, flexWrap: 'wrap' }}>
+                    <Button variant="outlined" component="label" startIcon={<Iconify icon="mdi:file-upload-outline" />}>
+                        {file ? 'Change file' : 'Upload PDF'}
+                        <input hidden type="file" accept="application/pdf" onChange={handleFileChange} />
+                    </Button>
+                    {file && <Chip label={file.name} onDelete={() => setFile(null)} />}
+                </Stack>
+
+                <TextField
+                    fullWidth
+                    multiline
+                    minRows={2}
+                    label="Notes (optional)"
+                    value={notes}
+                    onChange={(e) => setNotes(e.target.value)}
+                    sx={{ mb: 2 }}
+                />
+
+                <LoadingButton
+                    variant="contained"
+                    loading={uploading}
+                    disabled={!file}
+                    onClick={handleUpload}
+                >
+                    Upload &amp; Generate Combined Document
                 </LoadingButton>
 
                 <Box sx={{ mt: 3 }}>
                     <Typography variant="subtitle2" sx={{ mb: 1 }}>
-                        History
+                        Previous Uploads
                     </Typography>
                     {(!documents || documents.length === 0) && (
                         <Typography variant="body2" color="text.secondary">
-                            No combined documents generated yet.
+                            No supplementary documents uploaded yet.
                         </Typography>
                     )}
                     <Stack spacing={1.5}>

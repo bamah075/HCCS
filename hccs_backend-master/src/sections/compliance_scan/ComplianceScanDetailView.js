@@ -34,7 +34,6 @@ import {
     REMARK_PRESETS,
 } from './compliance-scan-selections';
 import ComplianceDocumentsPanel from './ComplianceDocumentsPanel';
-import LeadDocumentOverrideCard from './LeadDocumentOverrideCard';
 
 export default function ComplianceScanDetailView({ id }) {
     const settings = useSettingsContext();
@@ -480,9 +479,6 @@ export default function ComplianceScanDetailView({ id }) {
                             </Stack>
                         </CardContent>
                     </Card>
-                </Box>
-                <Box sx={{ mt: 3 }}>
-                    <LeadDocumentOverrideCard scanId={scanData.id} />
                 </Box>
                 <Box sx={{ mt: 3 }}>
                     <ComplianceDocumentsPanel scanId={scanData.id} documents={documents} onUploaded={getData} />

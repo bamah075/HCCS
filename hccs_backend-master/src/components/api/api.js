@@ -54,14 +54,7 @@ export const get_compliance_scans = async () => create_function("/api/compliance
 export const get_compliance_scans_details = async (data) => create_function("/api/compliance_scan/detail", data, 1);
 export const save_compliance_scan_action_report = async (data) =>
     create_function("/api/compliance_scan/action_report", data, 1);
-export const get_compliance_standard_document = async () => create_function("/api/compliance_scan/standard_document");
-export const save_compliance_standard_document = async (data) =>
-    create_function("/api/compliance_scan/standard_document", data, 1);
-export const get_compliance_scan_document_override = async (data) =>
-    create_function(`/api/compliance_scan/document_override?scan_id=${encodeURIComponent(data.scan_id)}`);
-export const save_compliance_scan_document_override = async (data) =>
-    create_function("/api/compliance_scan/document_override", data, 1);
-export const regenerate_compliance_scan_document = async (data) =>
+export const save_compliance_scan_document = async (data) =>
     create_function("/api/compliance_scan/document", data, 1);
 export const clear_compliance_scan_qr = async () => create_function("/api/compliance_scan/clear_qr", {}, 1);
 
