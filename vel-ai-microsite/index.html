@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vel AI — Your business, answered</title>
+<meta name="description" content="AI receptionist and workflow automation for Australian business owners. Sounds human. Books the job. Never sleeps. Concept scroll-film redesign.">
+<style>
+/* ============ world ============ */
+:root{
+  --ink:#05070D; --bone:#F2F0EA; --vel:#7C5CFF; --miss:#E4573D;
+  --mut:rgba(242,240,234,.55);
+  --disp:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto}
+body{background:var(--ink);color:var(--bone);font:16px/1.5 var(--disp);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--vel);color:var(--ink)}
+h1,h2,h3{font-weight:800;letter-spacing:-.02em}
+a{color:inherit}
+.mono{font-family:var(--mono)}
+
+/* ============ preloader ============ */
+#pre{position:fixed;inset:0;z-index:50;background:var(--ink);display:grid;place-items:center;
+  transition:transform .65s cubic-bezier(.7,0,.2,1)}
+#pre.done{transform:translateY(-101%)}
+#pre .mark{font-weight:900;font-size:17vw;letter-spacing:-.04em;line-height:.9;overflow:hidden}
+#pre .mark span{display:inline-block;transform:translateY(110%);animation:rise .7s cubic-bezier(.2,.9,.2,1) forwards}
+#pre .mark .ai{color:var(--vel)}
+#pre .mark span:nth-child(2){animation-delay:.12s}
+@keyframes rise{to{transform:translateY(0)}}
+#pre .bar{width:38vw;height:2px;background:rgba(242,240,234,.15);margin-top:26px;overflow:hidden}
+#pre .bar i{display:block;height:100%;background:var(--vel);transform-origin:0 50%;transform:scaleX(0)}
+
+/* ============ film scaffold ============ */
+/* Default (no JS / reduced motion): plain stacked story, fully readable. */
+.film{position:relative}
+.stage{position:relative}
+.ch{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+  padding:14vh 7vw;position:relative}
+.daylight{display:none}
+/* Film mode (JS on, motion ok): tall scroller + sticky stage + stacked layers. */
+html.filmon .film{height:3000vh;height:3000svh}
+html.filmon .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+html.filmon .ch{position:absolute;inset:0;min-height:0;padding:0 7vw;justify-content:center;
+  will-change:transform;visibility:hidden}
+html.filmon .daylight{display:block;position:absolute;inset:0;background:var(--bone);
+  opacity:0;pointer-events:none}
+html.filmon .fx{opacity:0}
+.vignette{position:absolute;inset:0;pointer-events:none;z-index:5;
+  background:radial-gradient(120% 90% at 50% 45%,transparent 55%,rgba(0,0,0,.5) 100%)}
+html:not(.filmon) .vignette{display:none}
+
+/* type scale */
+.disp{font-weight:900;font-size:clamp(2.4rem,11.5vw,5.2rem);line-height:1.02;letter-spacing:-.03em}
+.disp2{font-weight:900;font-size:clamp(1.9rem,9vw,4rem);line-height:1.05;letter-spacing:-.03em}
+.sub{color:var(--mut);font-size:clamp(1rem,4.2vw,1.25rem);line-height:1.45}
+.kick{font-family:var(--mono);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)}
+
+/* ============ ch1 hook ============ */
+#ch1 .rings{position:absolute;inset:0;display:grid;place-items:center;z-index:0}
+#ch1 .rings i{position:absolute;width:52vw;height:52vw;max-width:340px;max-height:340px;
+  border:1px solid rgba(228,87,61,.5);border-radius:50%}
+#ch1 .stamp{position:relative;z-index:1}
+#ch1 .time{font-weight:900;font-size:clamp(4.5rem,26vw,11rem);letter-spacing:-.05em;line-height:.9;font-variant-numeric:tabular-nums}
+#ch1 .date{margin-top:.6rem}
+#ch1 .l1,#ch1 .l2{position:relative;z-index:1;margin-top:1.4rem}
+#cue{position:fixed;left:0;right:0;bottom:calc(14px + env(safe-area-inset-bottom));z-index:6;
+  text-align:center;font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;color:var(--mut)}
+html:not(.filmon) #cue{display:none}
+
+/* ============ ch2 pain ============ */
+#ch2 .line{position:absolute;left:7vw;right:7vw;top:50%;transform:translateY(-50%)}
+#ch2 .u{display:block;height:4px;background:var(--miss);margin-top:14px;transform-origin:0 50%;transform:scaleX(0)}
+html:not(.filmon) #ch2 .line{position:static;transform:none;margin:1.2em 0}
+html:not(.filmon) #ch2 .u{transform:none}
+
+/* ============ ch3 fear ============ */
+#ch3 .head{margin-bottom:4vh}
+#ch3 .nstack{display:flex;flex-direction:column;gap:10px}
+.nf{background:rgba(242,240,234,.06);border:1px solid rgba(242,240,234,.1);border-radius:14px;
+  padding:12px 16px;font-family:var(--mono);font-size:.82rem;display:flex;gap:12px;align-items:center}
+.nf b{color:var(--miss);font-weight:400}
+.nf span{color:var(--mut);margin-left:auto;font-size:.72rem}
+#ch3 .next{margin-top:4vh;color:var(--miss)}
+
+/* ============ ch4 turn ============ */
+#ch4{align-items:center;text-align:center}
+.call{width:min(86vw,360px);background:rgba(242,240,234,.05);border:1px solid rgba(242,240,234,.12);
+  border-radius:22px;padding:22px 20px;backdrop-filter:none;text-align:left;margin:0 auto}
+.call .who{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;color:var(--mut);text-transform:uppercase}
+.call .state{font-weight:800;font-size:1.3rem;margin-top:4px}
+.call .wave{display:flex;gap:5px;align-items:center;height:34px;margin:14px 0 6px}
+.call .wave i{width:5px;height:26px;border-radius:3px;background:var(--vel);transform:scaleY(.15);transform-origin:center}
+.tl{font-family:var(--mono);font-size:.82rem;line-height:1.6;margin-top:10px;
+  clip-path:inset(0 100% 0 0);white-space:pre-wrap}
+.tl b{color:var(--vel);font-weight:700}
+.tl.caller b{color:var(--bone)}
+.booked{display:inline-block;margin-top:16px;background:var(--vel);color:var(--ink);
+  font-weight:800;padding:8px 16px;border-radius:999px;font-size:.9rem;transform:scale(0);letter-spacing:.02em}
+#ch4 .brand{position:absolute;left:7vw;right:7vw;top:50%;transform:translateY(-50%);text-align:center;opacity:0}
+#ch4 .brand .disp{font-size:clamp(2.6rem,13vw,6rem)}
+#ch4 .brand .disp em{font-style:normal;color:var(--vel)}
+#ch4 .brand .sub{margin-top:1rem}
+html:not(.filmon) #ch4 .brand{position:static;transform:none;opacity:1;margin-top:3rem}
+html:not(.filmon) .tl{clip-path:none}
+html:not(.filmon) .booked{transform:none}
+
+/* ============ ch5 after ============ */
+#ch5{color:var(--ink)}
+html:not(.filmon) #ch5{background:var(--bone)}
+#ch5 .sub{color:rgba(5,7,13,.6)}
+#ch5 .list{margin:3.5vh 0;display:flex;flex-direction:column;gap:12px;font-weight:700;font-size:clamp(1.15rem,5.4vw,1.6rem)}
+#ch5 .list li{list-style:none;display:flex;gap:12px;align-items:baseline}
+#ch5 .list .tick{color:var(--vel);font-weight:900}
+#ch5 .cred{margin-top:1.5vh;font-weight:800;font-size:clamp(1.15rem,5.6vw,1.7rem);line-height:1.3}
+#ch5 .claim{margin-top:3.5vh;font-family:var(--mono);font-size:.85rem;color:rgba(5,7,13,.65);
+  border-left:3px solid var(--vel);padding-left:14px}
+
+/* ============ ch6 finale ============ */
+#ch6{align-items:center;text-align:center}
+#ch6 .glow{position:absolute;inset:0;background:radial-gradient(70% 50% at 50% 55%,rgba(124,92,255,.35),transparent 70%);opacity:0}
+.conv{position:absolute;inset:0;pointer-events:none}
+.conv span{position:absolute;left:50%;top:50%;font-family:var(--mono);font-size:.8rem;color:var(--mut);white-space:nowrap}
+#ch6 .wrap{position:relative;z-index:2}
+.cta{display:inline-block;margin-top:3.5vh;background:var(--vel);color:var(--ink);text-decoration:none;
+  font-weight:800;font-size:1.05rem;padding:18px 34px;border-radius:999px;letter-spacing:.01em;
+  transition:transform .12s ease}
+.cta:active{transform:scale(.96)}
+.cta.live{animation:breathe 3s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.03)}}
+html:not(.filmon) #ch6 .glow,html:not(.filmon) .conv{display:none}
+
+/* ============ after-film ============ */
+main{position:relative;z-index:2;background:var(--ink);padding:0 7vw calc(90px + env(safe-area-inset-bottom))}
+main section{padding:9vh 0;border-top:1px solid rgba(242,240,234,.08);max-width:640px;margin:0 auto}
+.svc{display:flex;flex-direction:column;gap:16px;margin-top:3vh}
+.card{border:1px solid rgba(242,240,234,.12);border-radius:18px;padding:20px}
+.card h3{font-size:1.2rem}
+.card h3 i{font-style:normal;color:var(--vel);margin-right:8px}
+.card p{color:var(--mut);margin-top:6px;font-size:.95rem}
+.trust{display:flex;flex-wrap:wrap;gap:10px;margin-top:3vh}
+.trust span{font-family:var(--mono);font-size:.75rem;border:1px solid rgba(242,240,234,.15);
+  border-radius:999px;padding:8px 14px;color:var(--mut)}
+.offer{text-align:center}
+footer{max-width:640px;margin:0 auto;padding:5vh 0;color:var(--mut);font-size:.8rem;line-height:1.7}
+footer a{color:var(--vel)}
+
+/* fixed CTA bar */
+#bar{position:fixed;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom));z-index:40;
+  background:rgba(5,7,13,.85);border:1px solid rgba(242,240,234,.14);border-radius:999px;
+  display:flex;align-items:center;gap:12px;padding:10px 10px 10px 20px;
+  transform:translateY(140%);transition:transform .4s cubic-bezier(.2,.9,.2,1)}
+body.past-film #bar{transform:translateY(0)}
+#bar .t{font-size:.85rem;font-weight:700}
+#bar .cta{margin:0;padding:12px 20px;font-size:.9rem;margin-left:auto;animation:none}
+html:not(.filmon) #bar{display:none}
+
+@media (min-width:700px){
+  .ch{padding-left:0;padding-right:0}
+  .ch>*, #ch2 .line{max-width:600px;margin-left:auto;margin-right:auto}
+  html.filmon #ch2 .line{left:50%;right:auto;width:600px;transform:translate(-50%,-50%)}
+  html.filmon #ch4 .brand{left:50%;right:auto;width:600px;transform:translate(-50%,-50%)}
+}
+@media (prefers-reduced-motion:reduce){
+  #pre{display:none}
+  .cta.live{animation:none}
+}
+</style>
+</head>
+<body>
+
+<div id="pre" aria-hidden="true">
+  <div>
+    <div class="mark"><span>VEL&nbsp;</span><span class="ai">AI</span></div>
+    <div class="bar"><i id="preFill"></i></div>
+  </div>
+</div>
+
+<div class="film" id="film">
+  <div class="stage" id="stage">
+    <div class="daylight" id="daylight"></div>
+
+    <!-- 1 · HOOK -->
+    <section class="ch" id="ch1">
+      <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="stamp fx">
+        <div class="time">3:47</div>
+        <div class="kick date">PM — Tuesday</div>
+      </div>
+      <h1 class="disp2 l1 fx">A customer just&nbsp;called.</h1>
+      <p class="disp2 l2 fx" style="color:var(--miss)">No one picked&nbsp;up.</p>
+    </section>
+
+    <!-- 2 · PAIN -->
+    <section class="ch" id="ch2" aria-label="You were busy being the whole business">
+      <p class="disp line fx">You were on the&nbsp;tools.</p>
+      <p class="disp line fx">In a meeting.</p>
+      <p class="disp line fx">On the other&nbsp;line.</p>
+      <p class="disp line fx">Being the whole business.<span class="u"></span></p>
+    </section>
+
+    <!-- 3 · FEAR -->
+    <section class="ch" id="ch3">
+      <h2 class="disp2 head fx">They didn't leave a&nbsp;voicemail.</h2>
+      <div class="nstack">
+        <div class="nf fx"><b>✕</b> Missed call · Private number <span>4:02 pm</span></div>
+        <div class="nf fx"><b>✕</b> Missed call · Mobile <span>5:15 pm</span></div>
+        <div class="nf fx"><b>✕</b> Missed call · Private number <span>6:48 pm</span></div>
+        <div class="nf fx"><b>✕</b> Missed call · Mobile <span>7:03 pm</span></div>
+        <div class="nf fx"><b>✕</b> Missed call · Mobile <span>8:31 pm</span></div>
+      </div>
+      <p class="disp2 next fx">They called the next name on&nbsp;Google.</p>
+    </section>
+
+    <!-- 4 · TURN — the held beat -->
+    <section class="ch" id="ch4">
+      <div class="call fx" id="callCard">
+        <div class="who">Incoming call</div>
+        <div class="state" id="callState">Ringing…</div>
+        <div class="wave" id="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="tl"><b>VEL</b>  Good afternoon — you've reached the front desk. How can I help?</p>
+        <p class="tl caller"><b>CALLER</b>  Do you do emergency call-outs?</p>
+        <p class="tl"><b>VEL</b>  We do. I can book you in for 5:30 today — does that work?</p>
+        <p class="tl caller"><b>CALLER</b>  Yeah. Yeah, that works.</p>
+        <span class="booked" id="booked">Booked ✓</span>
+      </div>
+      <div class="brand" id="brand">
+        <h2 class="disp">VEL <em>ANSWERS.</em></h2>
+        <p class="sub">Sounds human. Books the job.<br>Never sleeps.</p>
+      </div>
+    </section>
+
+    <!-- 5 · AFTER -->
+    <section class="ch" id="ch5">
+      <h2 class="disp a1 fx">It's 9 pm.<br>Your phone is&nbsp;quiet.</h2>
+      <ul class="list">
+        <li class="fx"><span class="tick">✓</span> Calls answered</li>
+        <li class="fx"><span class="tick">✓</span> Jobs booked</li>
+        <li class="fx"><span class="tick">✓</span> Follow-ups sent</li>
+      </ul>
+      <p class="cred fx">Built for owners, not engineers.<br>Live in 24 hours. No&nbsp;code.</p>
+      <p class="claim fx">Vel AI customers report 20+ hours back, every week.</p>
+    </section>
+
+    <!-- 6 · OFFER -->
+    <section class="ch" id="ch6">
+      <div class="glow" id="glow"></div>
+      <div class="conv" aria-hidden="true">
+        <span>answered</span><span>booked</span><span>followed-up</span>
+        <span>on time</span><span>quiet phone</span><span>evenings off</span>
+      </div>
+      <div class="wrap">
+        <p class="kick fx" id="f0">Vel AI · Australia</p>
+        <h2 class="disp fx" id="f1">Your business,<br>answered.</h2>
+        <a class="cta fx" id="cta" href="https://vel-ai.com.au/">Get my time back</a>
+      </div>
+    </section>
+
+    <div class="vignette"></div>
+  </div>
+</div>
+
+<p id="cue">SCROLL</p>
+
+<main>
+  <section>
+    <p class="kick">What Vel runs for you</p>
+    <div class="svc">
+      <div class="card"><h3><i>01</i>AI Receptionist</h3>
+        <p>A voice trained on your business. Answers every call, day or night, handles the questions, transfers a human when it matters. Every transcript kept.</p></div>
+      <div class="card"><h3><i>02</i>Workflow Automation</h3>
+        <p>Lead follow-up, appointment reminders, client onboarding — pre-built, switched on for your business, most customers fully live within 24 hours.</p></div>
+      <div class="card"><h3><i>03</i>One Dashboard</h3>
+        <p>Your tools unified into one view, so decisions stop being archaeology.</p></div>
+    </div>
+    <div class="trust">
+      <span>live in 24 hours</span><span>no code</span><span>support &lt; 2 hours</span><span>solo → enterprise</span>
+    </div>
+  </section>
+
+  <section class="offer">
+    <h2 class="disp2">Ready when you&nbsp;are.</h2>
+    <p class="sub" style="margin-top:1rem">Tell Vel about your business.<br>Be answering by this time tomorrow.</p>
+    <a class="cta" href="https://vel-ai.com.au/">Get my time back</a>
+  </section>
+
+  <footer>
+    Independent concept redesign of <a href="https://vel-ai.com.au/">vel-ai.com.au</a>,
+    built as a scroll-film demonstration. Not the live Vel AI Consulting website —
+    visit the real one for services and contact.
+  </footer>
+</main>
+
+<div id="bar" aria-hidden="true">
+  <span class="t">Vel AI</span>
+  <a class="cta" href="https://vel-ai.com.au/">Get my time back</a>
+</div>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pre = document.getElementById('pre');
+  if (reduce){ pre.remove(); return; }              // static skeleton is the film
+  document.documentElement.classList.add('filmon');
+
+  var $ = function(s,c){ return (c||document).querySelector(s); };
+  var $$ = function(s,c){ return [].slice.call((c||document).querySelectorAll(s)); };
+  var clamp = function(x){ return Math.min(1,Math.max(0,x)); };
+  var L = function(p,a,b){ return clamp((p-a)/(b-a)); };
+  var E = function(x){ return x<.5 ? 2*x*x : 1-Math.pow(-2*x+2,2)/2; };
+
+  /* ---------- preloader (real min-time, system fonts are instant) ---------- */
+  var t0 = performance.now(), MIN = 950, introStart = 0;
+  document.body.style.overflow='hidden';
+  (function fill(){
+    var r = clamp((performance.now()-t0)/MIN);
+    $('#preFill').style.transform='scaleX('+r+')';
+    if (r<1) requestAnimationFrame(fill);
+    else { pre.classList.add('done'); document.body.style.overflow='';
+           introStart = performance.now()+250;      // hook plays in as the wipe reveals it
+           setTimeout(function(){ pre.remove(); },700); }
+  })();
+
+  /* ---------- element refs ---------- */
+  var film=$('#film'), cue=$('#cue'), daylight=$('#daylight');
+  var ch=[1,2,3,4,5,6].map(function(i){return $('#ch'+i);});
+  var rings=$$('#ch1 .rings i'), stamp=$('#ch1 .stamp'), l1=$('#ch1 .l1'), l2=$('#ch1 .l2');
+  var painLines=$$('#ch2 .line'), painU=$('#ch2 .u');
+  var fearHead=$('#ch3 .head'), nfs=$$('#ch3 .nf'), nstack=$('#ch3 .nstack'), nextName=$('#ch3 .next');
+  var callCard=$('#callCard'), callState=$('#callState'), waveBars=$$('#wave i'),
+      tls=$$('.tl'), booked=$('#booked'), brand=$('#brand');
+  var a1=$('#ch5 .a1'), ticks=$$('#ch5 .list li'), cred=$('#ch5 .cred'), claim=$('#ch5 .claim');
+  var glow=$('#glow'), convs=$$('.conv span'), f0=$('#f0'), f1=$('#f1'), cta=$('#cta');
+
+  // converging words: fixed start offsets (deterministic, reversible)
+  var convPos=[[-38,-30],[36,-24],[-30,22],[40,18],[-12,-40],[14,36]];
+
+  var SL=[[0,.12],[.12,.30],[.30,.42],[.42,.66],[.66,.84],[.84,1]]; // chapter slices
+
+  /* ---------- scroll driver (measure only) ---------- */
+  var targetP=0, p=-1, total=1, filmBottom=0;
+  function measure(){
+    var r=film.getBoundingClientRect();
+    total=film.offsetHeight-innerHeight;
+    targetP=clamp(-r.top/total);
+    filmBottom=r.bottom;
+  }
+  addEventListener('scroll',measure,{passive:true});
+  addEventListener('resize',measure);
+  measure();
+
+  var lastChapter=-1, canBuzz='vibrate' in navigator;
+
+  function io(el,r,y,s){ // in-out helper: opacity + rise + optional scale
+    el.style.opacity=r;
+    el.style.transform='translateY('+((1-r)*(y||30))+'px)'+(s?' scale('+(s+(1-s)*r)+')':'');
+  }
+
+  function render(){
+    // chapter visibility windows
+    for(var i=0;i<6;i++){
+      var on = p > SL[i][0]-.02 && p < SL[i][1]+.02;
+      ch[i].style.visibility = on?'visible':'hidden';
+    }
+    cue.style.opacity = clamp(1-p*25);
+
+    /* — ch1 hook — (entrance is time-driven after the preloader, so the top
+       of the page is never blank; scroll only drives the pulse and the exit) */
+    var intro = introStart ? clamp((performance.now()-introStart)/1100) : 0;
+    if(ch[0].style.visibility!=='hidden'){
+      var l=L(p,0,.12), out=L(l,.88,1);
+      ch[0].style.transform='translateY('+(-out*8)+'%)';
+      ch[0].style.opacity=1-out;
+      io(stamp, E(clamp(intro*1.6)), 24, .92);
+      io(l1, E(clamp(intro*1.6-.35)), 34);
+      io(l2, E(clamp(intro*1.6-.6)), 34);
+      for(var i=0;i<3;i++){
+        var ph=(l*2.2+intro*.4+i/3)%1;
+        rings[i].style.transform='scale('+(0.35+ph*2.3)+')';
+        rings[i].style.opacity=(1-ph)*.7*intro;
+      }
+    }
+
+    /* — ch2 pain — */
+    if(ch[1].style.visibility!=='hidden'){
+      var l=L(p,.12,.30);
+      for(var i=0;i<4;i++){
+        var a=i*.21, isLast=i===3;
+        var s=L(l,a,a+.15), o=isLast?0:L(l,a+.19,a+.26);
+        var e=E(s);
+        painLines[i].style.opacity=e*(1-o);
+        // entrance scale stays inside the viewport (1.12 max — 1.35 clipped edges)
+        painLines[i].style.transform='translateY(calc(-50% + '+((1-e)*40-o*46)+'px)) scale('+(1.12-.12*e)+')';
+      }
+      painU.style.transform='scaleX('+E(L(l,.82,1))+')';
+    }
+
+    /* — ch3 fear — */
+    if(ch[2].style.visibility!=='hidden'){
+      var l=L(p,.30,.42);
+      io(fearHead, E(L(l,0,.2)), 26);
+      fearHead.style.opacity=E(L(l,0,.2))*(1-.6*L(l,.35,.7));
+      for(var i=0;i<nfs.length;i++){
+        var r=E(L(l,.2+i*.1,.3+i*.1));
+        nfs[i].style.opacity=r;
+        nfs[i].style.transform='translateY('+((1-r)*26)+'px)';
+      }
+      nstack.style.transform='translateY('+(-l*10)+'px)';
+      io(nextName, E(L(l,.78,.95)), 30);
+    }
+
+    /* — ch4 turn: the held beat — */
+    if(ch[3].style.visibility!=='hidden'){
+      var l=L(p,.42,.66);
+      var cardIn=E(L(l,0,.07)), cardOut=L(l,.78,.86); // fully gone before the brand line lands
+      callCard.style.opacity=cardIn*(1-cardOut);
+      callCard.style.transform='translateY('+((1-cardIn)*40)+'px) scale('+(1-cardOut*.08)+')';
+      var answered=l>.11;
+      callState.textContent=answered?'Vel AI · connected':'Ringing…';
+      callState.style.color=answered?'#7C5CFF':'';
+      for(var i=0;i<waveBars.length;i++){
+        var h=answered ? .25+Math.abs(Math.sin(l*46+i*1.7))*.75*(1-cardOut) : .15+((l*30+i)%1)*.1;
+        waveBars[i].style.transform='scaleY('+h+')';
+      }
+      for(var i=0;i<tls.length;i++){
+        var r=L(l,.15+i*.14,.27+i*.14);
+        tls[i].style.clipPath='inset(0 '+((1-r)*100)+'% 0 0)';
+        tls[i].style.opacity=r>0?1:0;
+      }
+      var b=E(L(l,.73,.79));
+      booked.style.transform='scale('+b+')';
+      var br=E(L(l,.84,.95));
+      brand.style.opacity=br;
+      brand.style.transform='translateY(calc(-50% + '+((1-br)*40)+'px))';
+    }
+
+    /* — daylight crossfade (ch5 owns it, ch6 takes it away) — */
+    daylight.style.opacity = E(L(p,.655,.70)) * (1-E(L(p,.84,.875)));
+
+    /* — ch5 after — */
+    if(ch[4].style.visibility!=='hidden'){
+      var l=L(p,.66,.84);
+      io(a1, E(L(l,.06,.22)), 30);
+      for(var i=0;i<ticks.length;i++) io(ticks[i], E(L(l,.26+i*.08,.36+i*.08)), 22);
+      io(cred, E(L(l,.55,.7)), 26);
+      io(claim, E(L(l,.72,.85)), 20);
+      var out5=L(l,.93,1);
+      ch[4].style.opacity=1-out5;
+    }
+
+    /* — ch6 finale — */
+    if(ch[5].style.visibility!=='hidden'){
+      var l=L(p,.84,1);
+      glow.style.opacity=E(L(l,.1,.5))*.9;
+      for(var i=0;i<convs.length;i++){
+        var r=E(L(l,.05+i*.04,.42+i*.04));
+        convs[i].style.transform='translate(calc(-50% + '+(convPos[i][0]*(1-r))+'vw),calc(-50% + '+(convPos[i][1]*(1-r))+'vh)) scale('+(1-r*.6)+')';
+        convs[i].style.opacity=Math.sin(r*Math.PI); // in, then absorbed
+      }
+      io(f0, E(L(l,.3,.45)), 16);
+      io(f1, E(L(l,.36,.55)), 34, .94);
+      io(cta, E(L(l,.5,.68)), 24, .8);
+      cta.classList.toggle('live', l>.7);
+    }
+
+    // haptic tick on chapter change
+    var cur=SL.findIndex(function(s){return p>=s[0]&&p<s[1];});
+    if(canBuzz && lastChapter!==-1 && cur!==-1 && cur!==lastChapter) navigator.vibrate(10);
+    if(cur!==-1) lastChapter=cur;
+
+    // fixed CTA bar once the film is behind us
+    document.body.classList.toggle('past-film', filmBottom < innerHeight*1.05);
+  }
+
+  /* ---------- one rAF loop, all writes in render ---------- */
+  (function tick(){
+    p += (targetP-p)*.12;
+    if (p<0) p=targetP;                     // first frame
+    if (Math.abs(targetP-p)<.0004) p=targetP;
+    render();
+    requestAnimationFrame(tick);
+  })();
+
+  cta.addEventListener('touchstart',function(){ if(canBuzz) navigator.vibrate(20); },{passive:true});
+})();
+</script>
+</body>
+</html>
