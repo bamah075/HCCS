@@ -46,6 +46,10 @@ memory/
 **/memory/
 .claude-code/
 *.claude-session
+# ...except project skills, which are shared via the repo
+!.claude/
+.claude/*
+!.claude/skills/
 *.jsonl
 
 # Temp working folders / scratch
