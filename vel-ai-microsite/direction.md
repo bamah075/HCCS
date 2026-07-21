@@ -16,13 +16,24 @@ story arc.
 
 ## Type (2 families, zero network requests)
 
-- **Display:** system grotesque stack (`system-ui`) at weight 800–900, tight tracking,
-  clamp-sized to ~11vw. The film is the type; weight contrast does the art direction.
+- **Display:** Anton (SIL Open Font License, latin subset embedded as a 12 KB base64
+  woff2 — still zero network requests), uppercase, clamp-sized to 16–36vw. The poster
+  face carries the whole film; ghost copies with a 1px text-stroke and no fill make
+  the depth layers (the drifting "3:47"s in the hook, the giant "VEL" watermark
+  behind the call).
 - **Voice:** `ui-monospace` for everything the machines say — timestamps, missed-call
   notifications, the call transcript. The mono voice is how the visitor knows who is
   speaking without labels.
 
-System fonts keep the page at zero font bytes — the whole build ships under 40 KB.
+## Texture and depth
+
+- SVG feTurbulence grain over the whole film (fixed, opacity .09) — the "shot on
+  film" layer that kills the flat-web look.
+- Chapter tints: dim red radial in the fear chapter, violet radial in the turn.
+- The call card enters with a perspective rotateX and carries a violet glow shadow;
+  the finale gets two drifting radial-gradient orbs behind the convergence.
+
+The whole build ships at ~43 KB in one file.
 
 ## Motion personality
 
